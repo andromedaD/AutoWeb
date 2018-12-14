@@ -1,0 +1,20 @@
+#邮件配置文件
+EMAIL:
+    smtpserver: smtp.163.com
+    user: k568898699@163.com
+    password: 306359211xxx
+    sender: k568898699@163.com
+    recives:
+       - 568898699@qq.com
+       - 306359211@qq.com
+       - k568898699@126.com
+    subject: Web selenium 自动化测试报告
+    emialpart_path: D:\python_script\image\test.jpg
+
+report_dir: D:\AutoWeb\test_report\
+case_dir: D:\AutoWeb\testscripts\
+all_logs_dir:  D:\AutoWeb\test_report\Logs\All_logs\
+error_logs_dir: D:\AutoWeb\test_report\Logs\Error_logs
+test_data_dir: D:\AutoWeb\test_data
+image_dir: D:\AutoWeb\test_report\image
+base_url: http://localhost

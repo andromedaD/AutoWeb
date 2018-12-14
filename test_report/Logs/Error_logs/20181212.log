@@ -1,0 +1,14 @@
+2018-12-12 15:10:58,313 - test_register - ERROR - test_register -129 - register error in type userinfo
+2018-12-12 15:21:21,544 - test_corporate_member_register - ERROR - test_register -145 - register error in type userinfo
+2018-12-12 15:22:01,313 - test_regular_member_register - ERROR - test_register -126 - register error in type userinfo
+2018-12-12 15:35:44,461 - test_corporate_member_register - ERROR - test_register -146 - register error in type userinfo
+2018-12-12 15:36:23,933 - test_regular_member_register - ERROR - test_register -127 - register error in type userinfo
+2018-12-12 15:41:02,624 - test_corporate_member_register - ERROR - test_register -146 - register error in type userinfo
+2018-12-12 15:41:42,277 - test_regular_member_register - ERROR - test_register -127 - register error in type userinfo
+2018-12-12 15:44:30,360 - test_regular_member_register - ERROR - test_register -128 - register error in type userinfo
+2018-12-12 16:01:07,948 - test_corporate_member_register - ERROR - test_register -142 - register error in type userinfo
+2018-12-12 16:01:45,904 - test_regular_member_register - ERROR - test_register -124 - register error in type userinfo
+2018-12-12 16:15:28,946 - test_corporate_member_register - ERROR - test_register -146 - register error in type userinfo
+2018-12-12 16:27:51,584 - test_corporate_member_register - ERROR - test_register -149 - register error in type userinfo
+2018-12-12 16:31:17,492 - test_corporate_member_register - ERROR - test_register -148 - register error in type userinfo
+2018-12-12 16:35:22,760 - test_regular_member_register - ERROR - test_register -129 - register error in type userinfo

@@ -1,0 +1,45 @@
+#请修改register下面的username和email
+
+
+report_dir: D:\AutoWeb\test_report\
+case_dir: D:\AutoWeb\testscripts\
+all_logs_dir:  D:\AutoWeb\test_report\Logs\All_logs\
+error_logs_dir: D:\AutoWeb\test_report\Logs\Error_logs
+test_data_dir: D:\AutoWeb\test_data
+image_dir: D:\AutoWeb\test_report\image
+base_url: http://localhost
+
+
+#login data
+login_url: ''
+username_element_loc: username
+password_element_loc: password
+submit_element_loc: Submit
+username: wangjin
+password: 123456
+check_assert_loc: 我的空间
+asset_value: 我的空间
+
+#register
+register:
+  register_element_loc: Submit2
+  nextbutton_element_loc: button
+  corporate_select_loc: /html/body/table[4]/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/input
+  username_loc: username
+  password_loc: password
+  repassword_loc: repassword
+  email_loc: email
+  company_loc: company
+  truename_loc: truename
+  mycall_loc: mycall
+  username:
+    - miaomiaomiao
+    - miaowawa
+  password: 123456
+  repassword: 123456
+  email:
+    - 21323121@126.com
+    - de2qwe3112@163.com
+  company: beixinyuan
+  truename: 王治本
+  mycall: 15423212323

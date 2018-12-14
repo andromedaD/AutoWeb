@@ -1,0 +1,18 @@
+2018-12-14 12:16:41,943 - test shop_page - ERROR - test_shop -105 - '连续剧 - Powered by EmpireCMS' != '图书杂志 - Powered by EmpireCMS'
+- 连续剧 - Powered by EmpireCMS
+? ^^^
++ 图书杂志 - Powered by EmpireCMS
+? ^^^^
+
+2018-12-14 12:17:16,828 - test shop_page - ERROR - test_shop -71 - '爱情片 - Powered by EmpireCMS' != '家用电器 - Powered by EmpireCMS'
+- 爱情片 - Powered by EmpireCMS
+? ^^^
++ 家用电器 - Powered by EmpireCMS
+? ^^^^
+
+2018-12-14 12:17:59,074 - test shop_page - ERROR - test_shop -37 - '影视频道 - Powered by EmpireCMS' != '网上商城 - Powered by EmpireCMS'
+- 影视频道 - Powered by EmpireCMS
+? ^^^^
++ 网上商城 - Powered by EmpireCMS
+? ^^^^
+

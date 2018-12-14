@@ -1,0 +1,50 @@
+2018-12-12 15:10:22,039 - test_register - INFO - Start test register
+2018-12-12 15:10:58,313 - test_register - ERROR - register error in type userinfo
+2018-12-12 15:10:58,314 - test_register - INFO - test register is end
+2018-12-12 15:20:45,509 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 15:21:21,544 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 15:21:21,545 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 15:21:25,147 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 15:22:01,313 - test_regular_member_register - ERROR - register error in type userinfo
+2018-12-12 15:22:01,315 - test_regular_member_register - INFO - test regular member register is end
+2018-12-12 15:35:08,348 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 15:35:44,461 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 15:35:44,463 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 15:35:47,887 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 15:36:23,933 - test_regular_member_register - ERROR - register error in type userinfo
+2018-12-12 15:36:23,933 - test_regular_member_register - INFO - test regular member register is end
+2018-12-12 15:40:22,634 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 15:41:02,624 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 15:41:02,624 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 15:41:06,634 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 15:41:42,277 - test_regular_member_register - ERROR - register error in type userinfo
+2018-12-12 15:41:42,278 - test_regular_member_register - INFO - test regular member register is end
+2018-12-12 15:43:06,354 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 15:43:50,686 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 15:43:54,276 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 15:44:30,360 - test_regular_member_register - ERROR - register error in type userinfo
+2018-12-12 15:44:30,361 - test_regular_member_register - INFO - test regular member register is end
+2018-12-12 16:00:23,778 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 16:01:07,948 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 16:01:07,948 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 16:01:11,319 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 16:01:45,904 - test_regular_member_register - ERROR - register error in type userinfo
+2018-12-12 16:01:45,905 - test_regular_member_register - INFO - test regular member register is end
+2018-12-12 16:14:44,975 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 16:15:28,946 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 16:15:28,947 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 16:15:32,096 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 16:27:07,137 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 16:27:51,584 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 16:27:51,584 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 16:27:55,151 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 16:30:34,580 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 16:31:17,492 - test_corporate_member_register - ERROR - register error in type userinfo
+2018-12-12 16:31:17,493 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 16:31:21,021 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 16:32:05,769 - test_regular_member_register - INFO - test regular member register is end
+2018-12-12 16:34:03,810 - test_corporate_member_register - INFO - Start test corporate member register
+2018-12-12 16:34:46,680 - test_corporate_member_register - INFO - test corporate member register is end
+2018-12-12 16:34:50,257 - test_regular_member_register - INFO - Start test regular member register
+2018-12-12 16:35:22,760 - test_regular_member_register - ERROR - register error in type userinfo
+2018-12-12 16:35:22,761 - test_regular_member_register - INFO - test regular member register is end
