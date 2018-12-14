@@ -157,3 +157,59 @@
 2018-12-14 13:30:50,436 - test categroy_msg_page - INFO - load fleamall page is ok
 2018-12-14 13:31:22,392 - test categroy_msg_page - INFO - load house page is ok
 2018-12-14 13:31:54,308 - test categroy_msg_page - INFO - load job page is ok
+2018-12-14 15:15:13,077 - test news_page - ERROR - 'list' object has no attribute 'click'
+2018-12-14 15:15:15,388 - test news_page - INFO - load sport news page is ok
+2018-12-14 15:16:46,565 - test news_page - INFO - load sport news page is ok
+2018-12-14 15:21:20,461 - test news_page - INFO - load sport news page is ok
+2018-12-14 15:30:54,524 - test download_page - INFO - load sport news page is ok
+2018-12-14 15:35:50,403 - test download_page - INFO - load lastnewb page is ok
+2018-12-14 15:39:07,443 - test download_page - INFO - load hotnewb page is ok
+2018-12-14 15:44:51,967 - test tvchannel_page - INFO - load recommandnec page is ok
+2018-12-14 15:49:57,722 - test tvchannel_page - INFO - load lastnec page is ok
+2018-12-14 15:51:54,793 - test tvchannel_page - INFO - load hotnec page is ok
+2018-12-14 15:58:04,252 - test shop_page - ERROR - Message: Unable to locate element: {"method":"link text","selector":" 惠普笔记本电脑DV280"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmp0og9n31_/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmp0og9n31_/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-14 15:58:06,590 - test shop_page - INFO - load recommandned page is ok
+2018-12-14 16:05:18,751 - test shop_page - ERROR - '网上商城' != ' 惠普笔记本电脑DV2803TX - Powered by EmpireCMS'
+- 网上商城
++  惠普笔记本电脑DV2803TX - Powered by EmpireCMS
+
+2018-12-14 16:05:21,093 - test shop_page - INFO - load recommandned page is ok
+2018-12-14 16:07:13,829 - test shop_page - ERROR - '网上商城' != ' 惠普笔记本电脑DV2803TX - Powered by EmpireCMS'
+- 网上商城
++  惠普笔记本电脑DV2803TX - Powered by EmpireCMS
+
+2018-12-14 16:07:16,174 - test shop_page - INFO - load recommandned page is ok
+2018-12-14 16:08:52,088 - test shop_page - ERROR - '惠普笔记本电脑DV2803TX - Powered by EmpireCMS' != ' 惠普笔记本电脑DV2803TX - Powered by EmpireCMS'
+- 惠普笔记本电脑DV2803TX - Powered by EmpireCMS
++  惠普笔记本电脑DV2803TX - Powered by EmpireCMS
+? +
+
+2018-12-14 16:08:54,470 - test shop_page - INFO - load recommandned page is ok
+2018-12-14 16:09:49,697 - test shop_page - INFO - load recommandned page is ok
+2018-12-14 16:16:59,047 - test shop_page - INFO - load lastned page is ok
+2018-12-14 16:20:40,545 - test shop_page - INFO - load hotned page is ok
+2018-12-14 16:29:27,789 - test shop_page - INFO - load book page is ok
+2018-12-14 16:30:01,768 - test shop_page - INFO - load dianqi page is ok
+2018-12-14 16:30:34,993 - test shop_page - INFO - load digit page is ok
+2018-12-14 16:31:06,872 - test shop_page - INFO - load hotned page is ok
+2018-12-14 16:33:35,800 - test shop_page - INFO - load lastned page is ok
+2018-12-14 16:34:08,755 - test shop_page - INFO - load pc page is ok
+2018-12-14 16:34:39,827 - test shop_page - INFO - load recommandned page is ok
+2018-12-14 16:35:07,633 - test shop_page - INFO - load shop page is ok
+2018-12-14 16:42:24,882 - test Picturechannel_page - INFO - load hotnef page is ok
+2018-12-14 16:42:55,886 - test Picturechannel_page - ERROR - '图片频道 - Powered by EmpireCMS' != '宋慧乔[图集] - Powered by EmpireCMS'
+- 图片频道 - Powered by EmpireCMS
+?  ^^^
++ 宋慧乔[图集] - Powered by EmpireCMS
+? ++++ ^^
+
+2018-12-14 16:42:58,229 - test Picturechannel_page - INFO - load lastnef page is ok
+2018-12-14 16:43:30,201 - test Picturechannel_page - INFO - load recommandnef page is ok
+2018-12-14 16:48:40,991 - test Picturechannel_page - INFO - load lastnef page is ok
+2018-12-14 16:55:20,797 - test Picturechannel_page - INFO - load lastnef page is ok
+2018-12-14 16:55:51,462 - test Picturechannel_page - INFO - load recommandnef page is ok
+2018-12-14 17:02:32,578 - test Picturechannel_page - INFO - load lastnef page is ok
+2018-12-14 17:05:36,871 - test Picturechannel_page - INFO - load hotnef page is ok

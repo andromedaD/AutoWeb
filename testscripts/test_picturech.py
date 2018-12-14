@@ -91,6 +91,64 @@ class TestPicturech(StartEnd):
             self.logger.info("load animotion page is ok")
             newspage.quit_browser_()
 
+    def test_recommandnef_page(self):
+        elemen_loc = (By.CSS_SELECTOR,'img[alt="宋慧乔[图集]"]')
+        driver = browser()
+        newspage = Picturech(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            newspage.switch_new_window_()
+            title = newspage.check_title()
+            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load recommandnef page is ok")
+            newspage.quit_browser_()
+
+    def test_lastnef_page(self):
+        elemen_loc = (By.CSS_SELECTOR, 'table.box>tbody>tr>td>ul>li>a[title="宋慧乔[图集]"]')
+        driver = browser()
+        newspage = Picturech(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            title = newspage.check_title()
+            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load lastnef page is ok")
+            newspage.quit_browser_()
+
+    def test_hotnef_page(self):
+        elemen_loc = (By.CSS_SELECTOR, 'table.box>tbody>tr>td>ol.rank>li.no2>a')
+        driver = browser()
+        newspage = Picturech(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            title = newspage.check_title()
+            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load hotnef page is ok")
+            newspage.quit_browser_()
+
 if __name__ == '__main__':
     unittest.main()
 

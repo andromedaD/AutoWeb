@@ -3,7 +3,6 @@ import  unittest
 from time import sleep
 from selenium.webdriver.common.by import By
 from log_print import *
-# from testdata import *
 from myunit import StartEnd
 from test_login import Login
 from driver import *
@@ -108,6 +107,65 @@ class TestDownloadPage(StartEnd):
         finally:
             self.logger.info("load sport news page is ok")
             newspage.quit_browser_()
+
+    def test_recommandnewb_page(self):
+        elemen_loc = (By.LINK_TEXT, 'Windows Media Player')
+        driver = browser()
+        newspage = DownloadPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            newspage.switch_new_window_()
+            title = newspage.check_title()
+            self.assertEqual(title, 'Windows Media Player 11 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load recommandnewb page is ok")
+            newspage.quit_browser_()
+
+    def test_lastnewb_page(self):
+        elemen_loc = (By.LINK_TEXT, 'MPCGo 2.5')
+        driver = browser()
+        newspage = DownloadPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            title = newspage.check_title()
+            self.assertEqual(title, 'MPCGo 2.5 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load lastnewb page is ok")
+            newspage.quit_browser_()
+
+    def test_hotnewb_page(self):
+        elemen_loc = (By.LINK_TEXT, 'UltraEdit-32 14.00a+2 官方简体中文版')
+        driver = browser()
+        newspage = DownloadPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            title = newspage.check_title()
+            self.assertEqual(title, 'UltraEdit-32 14.00a+2 官方简体中文版 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load hotnewb page is ok")
+            newspage.quit_browser_()
+
 
 if __name__ == '__main__':
     unittest.main()

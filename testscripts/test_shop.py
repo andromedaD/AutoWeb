@@ -108,6 +108,65 @@ class TestShopPage(StartEnd):
             self.logger.info("load book page is ok")
             newspage.quit_browser_()
 
+    def test_recommandned_page(self):
+        elemen_loc = (By.XPATH, '/html/body/table[4]/tbody/tr/td[2]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/a/img')
+        driver = browser()
+        newspage = ShopPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            newspage.switch_new_window_()
+            title = newspage.check_title()
+            self.assertEqual(title, '惠普笔记本电脑DV2803TX - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load recommandned page is ok")
+            newspage.quit_browser_()
+
+    def test_lastned_page(self):
+        elemen_loc = (By.LINK_TEXT, '优化建模与LINDO\LINGO软件')
+        driver = browser()
+        newspage = ShopPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            title = newspage.check_title()
+            self.assertEqual(title, '优化建模与LINDO\LINGO软件 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load lastned page is ok")
+            newspage.quit_browser_()
+
+    def test_hotned_page(self):
+        elemen_loc = (By.LINK_TEXT, '柯达数码相机C713')
+        driver = browser()
+        newspage = ShopPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            element = newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            title = newspage.check_title()
+            self.assertEqual(title, '柯达数码相机C713 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load hotned page is ok")
+            newspage.quit_browser_()
+
+
 if __name__ == '__main__':
     unittest.main()
 

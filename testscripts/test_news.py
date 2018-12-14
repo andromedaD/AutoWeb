@@ -108,6 +108,65 @@ class TestNewsPage(StartEnd):
             self.logger.info("load sport news page is ok")
             newspage.quit_browser_()
 
+
+    def test_recommandnews_page(self):
+        elemen_loc= (By.LINK_TEXT, '中国男乒第16次捧起斯')
+        driver = browser()
+        newspage = NewsPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_news_page()
+        try:
+            element=newspage.find_element(*elemen_loc)
+            newspage.click_(element)
+            newspage.switch_new_window_()
+            title = newspage.check_news_title()
+            self.assertEqual(title, '中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load recommandnews page is ok")
+            newspage.quit_browser_()
+
+    def test_lastnews_page(self):
+        elemen_loc = (By.LINK_TEXT, '中国男乒第16次捧起斯韦思林杯')
+        driver = browser()
+        newspage = NewsPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_news_page()
+        try:
+            element = newspage.find_elements(*elemen_loc)
+            newspage.click_(element[0])
+            title = newspage.check_news_title()
+            self.assertEqual(title, '中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load lastnews page is ok")
+            newspage.quit_browser_()
+
+    def test_hotnews_page(self):
+        elemen_loc = (By.LINK_TEXT, '中国男乒第16次捧起斯韦思林杯')
+        driver = browser()
+        newspage = NewsPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_news_page()
+        try:
+            element = newspage.find_elements(*elemen_loc)
+            newspage.click_(element[1])
+            title = newspage.check_news_title()
+            self.assertEqual(title, '中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load hotnews page is ok")
+            newspage.quit_browser_()
+
 if __name__ == '__main__':
     unittest.main()
 
