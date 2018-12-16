@@ -22,10 +22,10 @@ def get_log(logname):
     error_log_name =error_log_path +rq + '.log'
     #创建handler
     #创建一个handler写入所有日志
-    fh = logging.FileHandler(all_log_name)
+    fh = logging.FileHandler(all_log_name,encoding='utf-8')
     fh.setLevel(logging.INFO)
     #创建一个handler写入错误日志
-    eh = logging.FileHandler(error_log_name)
+    eh = logging.FileHandler(error_log_name,encoding='utf-8')
     eh.setLevel(logging.ERROR)
     #创建一个handler输出到控制台
     ch = logging.StreamHandler()

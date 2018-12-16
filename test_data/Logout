@@ -1,0 +1,13 @@
+Logout:
+   logout_el:
+        - name: 登出按钮定位
+        - type: link_text
+        - value: 退出
+   check_info:
+        - name: 验证登录输入框元素定位
+        - type: name
+        - value: username
+   assertvalue:
+        - name: 验证值
+        - type: null
+        - value: ''

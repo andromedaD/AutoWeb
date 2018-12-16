@@ -1,16 +1,18 @@
 # -*- coding:UTF-8 -*-
-import  unittest
-from time import sleep
+import unittest
+
 from selenium.webdriver.common.by import By
+
+from Login.test_login import Login
+from driver import *
 from log_print import *
 from myunit import StartEnd
-from test_login import Login
-from driver import *
 
-class ShopPage(Login):
+
+class Picturech(Login):
     url='/'
     def load_master_page(self):
-        element=self.find_element(By.LINK_TEXT,'网上商城')
+        element=self.find_element(By.LINK_TEXT,'图片频道')
         self.click_(element)
         sleep(2)
     def load_part_page(self,status):
@@ -22,96 +24,79 @@ class ShopPage(Login):
     def check_title(self):
         return self.title_()
 
-class TestShopPage(StartEnd):
-    logger=get_log("test shop_page")
-    def test_shop_page(self):
+class TestPicturech(StartEnd):
+    logger=get_log("test Picturechannel_page")
+    def test_picturech_page(self):
         driver=browser()
-        newspage =ShopPage(driver)
+        newspage =Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
             title=newspage.check_title()
-            self.assertEqual(title,'网上商城 - Powered by EmpireCMS')
+            self.assertEqual(title,'图片频道 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load shop page is ok")
+            self.logger.info("load picturech page is ok")
             newspage.quit_browser_()
 
-    def test_digit_page(self,h_status=0):
+    def test_star_page(self,h_status=0):
         driver = browser()
-        newspage = ShopPage(driver)
+        newspage = Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
             newspage.load_part_page(h_status)
             title=newspage.check_title()
-            self.assertEqual(title,'手机数码 - Powered by EmpireCMS')
+            self.assertEqual(title,'明星风采 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load digit page is ok")
+            self.logger.info("load star page is ok")
             newspage.quit_browser_()
 
-    def test_dianqi_page(self, n_status=1):
+    def test_nature_page(self, n_status=1):
         driver = browser()
-        newspage = ShopPage(driver)
+        newspage = Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
             newspage.load_part_page(n_status)
             title = newspage.check_title()
-            self.assertEqual(title, '家用电器 - Powered by EmpireCMS')
+            self.assertEqual(title, '自然风景 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load dianqi page is ok")
+            self.logger.info("load nature page is ok")
             newspage.quit_browser_()
 
-    def test_pc_page(self, d_status=2):
+    def test_animotion_page(self, n_status=2):
         driver = browser()
-        newspage = ShopPage(driver)
+        newspage = Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
-            newspage.load_part_page(d_status)
+            newspage.load_part_page(n_status)
             title = newspage.check_title()
-            self.assertEqual(title, '品牌电脑 - Powered by EmpireCMS')
+            self.assertEqual(title, '动漫图片 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load pc page is ok")
+            self.logger.info("load animotion page is ok")
             newspage.quit_browser_()
 
-    def test_book_page(self, s_status=3):
+    def test_recommandnef_page(self):
+        elemen_loc = (By.CSS_SELECTOR,'img[alt="宋慧乔[图集]"]')
         driver = browser()
-        newspage = ShopPage(driver)
-        newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
-        try:
-            newspage.load_part_page(s_status)
-            title = newspage.check_title()
-            self.assertEqual(title, '图书杂志 - Powered by EmpireCMS')
-        except Exception as msg:
-            self.logger.error(msg)
-            newspage.quit_browser_()
-        finally:
-            self.logger.info("load book page is ok")
-            newspage.quit_browser_()
-
-    def test_recommandned_page(self):
-        elemen_loc = (By.XPATH, '/html/body/table[4]/tbody/tr/td[2]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/a/img')
-        driver = browser()
-        newspage = ShopPage(driver)
+        newspage = Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
@@ -120,18 +105,18 @@ class TestShopPage(StartEnd):
             newspage.click_(element)
             newspage.switch_new_window_()
             title = newspage.check_title()
-            self.assertEqual(title, '惠普笔记本电脑DV2803TX - Powered by EmpireCMS')
+            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load recommandned page is ok")
+            self.logger.info("load recommandnef page is ok")
             newspage.quit_browser_()
 
-    def test_lastned_page(self):
-        elemen_loc = (By.LINK_TEXT, '优化建模与LINDO\LINGO软件')
+    def test_lastnef_page(self):
+        elemen_loc = (By.CSS_SELECTOR, 'table.box>tbody>tr>td>ul>li>a[title="宋慧乔[图集]"]')
         driver = browser()
-        newspage = ShopPage(driver)
+        newspage = Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
@@ -139,18 +124,18 @@ class TestShopPage(StartEnd):
             element = newspage.find_element(*elemen_loc)
             newspage.click_(element)
             title = newspage.check_title()
-            self.assertEqual(title, '优化建模与LINDO\LINGO软件 - Powered by EmpireCMS')
+            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load lastned page is ok")
+            self.logger.info("load lastnef page is ok")
             newspage.quit_browser_()
 
-    def test_hotned_page(self):
-        elemen_loc = (By.LINK_TEXT, '柯达数码相机C713')
+    def test_hotnef_page(self):
+        elemen_loc = (By.CSS_SELECTOR, 'table.box>tbody>tr>td>ol.rank>li.no2>a')
         driver = browser()
-        newspage = ShopPage(driver)
+        newspage = Picturech(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
@@ -158,14 +143,13 @@ class TestShopPage(StartEnd):
             element = newspage.find_element(*elemen_loc)
             newspage.click_(element)
             title = newspage.check_title()
-            self.assertEqual(title, '柯达数码相机C713 - Powered by EmpireCMS')
+            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load hotned page is ok")
+            self.logger.info("load hotnef page is ok")
             newspage.quit_browser_()
-
 
 if __name__ == '__main__':
     unittest.main()

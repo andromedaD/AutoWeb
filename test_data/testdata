@@ -1,6 +1,5 @@
 #请修改register下面的username和email
 
-
 report_dir: D:\AutoWeb\test_report\
 case_dir: D:\AutoWeb\testscripts\
 all_logs_dir:  D:\AutoWeb\test_report\Logs\All_logs\

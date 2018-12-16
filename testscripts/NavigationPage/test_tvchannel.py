@@ -1,16 +1,18 @@
 # -*- coding:UTF-8 -*-
-import  unittest
-from time import sleep
+import unittest
+
 from selenium.webdriver.common.by import By
+
+from Login.test_login import Login
+from driver import *
 from log_print import *
 from myunit import StartEnd
-from test_login import Login
-from driver import *
 
-class Picturech(Login):
+
+class TvchannelPage(Login):
     url='/'
     def load_master_page(self):
-        element=self.find_element(By.LINK_TEXT,'图片频道')
+        element=self.find_element(By.LINK_TEXT,'影视频道')
         self.click_(element)
         sleep(2)
     def load_part_page(self,status):
@@ -22,79 +24,96 @@ class Picturech(Login):
     def check_title(self):
         return self.title_()
 
-class TestPicturech(StartEnd):
-    logger=get_log("test Picturechannel_page")
-    def test_picturech_page(self):
+class TestTvchannelPage(StartEnd):
+    logger=get_log("test tvchannel_page")
+    def test_tvchannel_page(self):
         driver=browser()
-        newspage =Picturech(driver)
+        newspage =TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
             title=newspage.check_title()
-            self.assertEqual(title,'图片频道 - Powered by EmpireCMS')
+            self.assertEqual(title,'影视频道 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load picturech page is ok")
+            self.logger.info("load tvchannel page is ok")
             newspage.quit_browser_()
 
-    def test_star_page(self,h_status=0):
+    def test_actionvideo_page(self,h_status=0):
         driver = browser()
-        newspage = Picturech(driver)
+        newspage = TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
             newspage.load_part_page(h_status)
             title=newspage.check_title()
-            self.assertEqual(title,'明星风采 - Powered by EmpireCMS')
+            self.assertEqual(title,'动作片 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load star page is ok")
+            self.logger.info("load action video page is ok")
             newspage.quit_browser_()
 
-    def test_nature_page(self, n_status=1):
+    def test_lovevideo_page(self, n_status=1):
         driver = browser()
-        newspage = Picturech(driver)
+        newspage = TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
             newspage.load_part_page(n_status)
             title = newspage.check_title()
-            self.assertEqual(title, '自然风景 - Powered by EmpireCMS')
+            self.assertEqual(title, '爱情片 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load nature page is ok")
+            self.logger.info("load lovevideo page is ok")
             newspage.quit_browser_()
 
-    def test_animotion_page(self, n_status=2):
+    def test_comedy_page(self, d_status=2):
         driver = browser()
-        newspage = Picturech(driver)
+        newspage = TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
         try:
-            newspage.load_part_page(n_status)
+            newspage.load_part_page(d_status)
             title = newspage.check_title()
-            self.assertEqual(title, '动漫图片 - Powered by EmpireCMS')
+            self.assertEqual(title, '喜剧片 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load animotion page is ok")
+            self.logger.info("load comedy page is ok")
             newspage.quit_browser_()
 
-    def test_recommandnef_page(self):
-        elemen_loc = (By.CSS_SELECTOR,'img[alt="宋慧乔[图集]"]')
+    def test_sitcome_page(self, s_status=3):
         driver = browser()
-        newspage = Picturech(driver)
+        newspage = TvchannelPage(driver)
+        newspage.open_browser_()
+        newspage.type_username()
+        newspage.load_master_page()
+        try:
+            newspage.load_part_page(s_status)
+            title = newspage.check_title()
+            self.assertEqual(title, '连续剧 - Powered by EmpireCMS')
+        except Exception as msg:
+            self.logger.error(msg)
+            newspage.quit_browser_()
+        finally:
+            self.logger.info("load sitcome page is ok")
+            newspage.quit_browser_()
+
+    def test_recommandnec_page(self):
+        elemen_loc = (By.LINK_TEXT, '西雅图夜未眠')
+        driver = browser()
+        newspage = TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
@@ -103,18 +122,18 @@ class TestPicturech(StartEnd):
             newspage.click_(element)
             newspage.switch_new_window_()
             title = newspage.check_title()
-            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
+            self.assertEqual(title, '西雅图夜未眠 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load recommandnef page is ok")
+            self.logger.info("load recommandnec page is ok")
             newspage.quit_browser_()
 
-    def test_lastnef_page(self):
-        elemen_loc = (By.CSS_SELECTOR, 'table.box>tbody>tr>td>ul>li>a[title="宋慧乔[图集]"]')
+    def test_lastnec_page(self):
+        elemen_loc = (By.LINK_TEXT, '三国演义06')
         driver = browser()
-        newspage = Picturech(driver)
+        newspage = TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
@@ -122,18 +141,18 @@ class TestPicturech(StartEnd):
             element = newspage.find_element(*elemen_loc)
             newspage.click_(element)
             title = newspage.check_title()
-            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
+            self.assertEqual(title, '三国演义06 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load lastnef page is ok")
+            self.logger.info("load lastnec page is ok")
             newspage.quit_browser_()
 
-    def test_hotnef_page(self):
-        elemen_loc = (By.CSS_SELECTOR, 'table.box>tbody>tr>td>ol.rank>li.no2>a')
+    def test_hotnec_page(self):
+        elemen_loc = (By.LINK_TEXT, '刀剑笑')
         driver = browser()
-        newspage = Picturech(driver)
+        newspage = TvchannelPage(driver)
         newspage.open_browser_()
         newspage.type_username()
         newspage.load_master_page()
@@ -141,12 +160,12 @@ class TestPicturech(StartEnd):
             element = newspage.find_element(*elemen_loc)
             newspage.click_(element)
             title = newspage.check_title()
-            self.assertEqual(title, '宋慧乔[图集] - Powered by EmpireCMS')
+            self.assertEqual(title, '刀剑笑 - Powered by EmpireCMS')
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load hotnef page is ok")
+            self.logger.info("load hotnec page is ok")
             newspage.quit_browser_()
 
 if __name__ == '__main__':

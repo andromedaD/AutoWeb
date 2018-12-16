@@ -1,0 +1,25 @@
+Login:
+    user:
+         - name: 用户名账号
+         - type: str
+         - value: wangjin
+    password:
+         - name: 登录密码
+         - type: int
+         - value: 123456
+    user_el:
+          - name: 用户名输入框元素定位
+          - type: name
+          - value: username
+    pwd_el:
+          - name: 密码输入框定位
+          - type: name
+          - value: password
+    submit_el:
+          - name: 提交按钮定位
+          - type: name
+          - value: Submit
+    check_info:
+          - name: 验证信息
+          - type: link_text
+          - value: 我的空间

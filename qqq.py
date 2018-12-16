@@ -1,16 +1,23 @@
-# from selenium import webdriver
-# from time import sleep
-# driver=webdriver.Firefox()
-# driver.get('http://localhost')
-# sleep(2)
-# driver.back()
-# driver.find_elements()
-# # driver.find_element_by_name('username').send_keys('wangjin')
-# # driver.find_element_by_name('password').send_keys('123456')
-# # driver.find_element_by_name('Submit').click()
-# # sleep(3)
-# # text=driver.find_element_by_link_text('我的空间').text
-# # print(text)
+from selenium import webdriver
+from time import sleep
+from testdata import *
+driver=webdriver.Firefox()
+driver.get('http://localhost')
+sleep(2)
+driver.switch_to.alert
+# driver.find_element(By.LINK_TEXT,"新闻中心").click()
+# element_loc=(testDataInfo()["element_loc"]["type"],testDataInfo()["element_loc"]['value'])
+# print(element_loc)
+# driver.find_element(element_loc)
+# print(element_loc)
+# driver.find_element()
+# print(type(element_loc))
+# driver.find_element_by_name('username').send_keys('wangjin')
+# driver.find_element_by_name('password').send_keys('123456')
+# driver.find_element_by_name('Submit').click()
+# sleep(3)
+# text=driver.find_element_by_link_text('我的空间').text
+# print(text)
 # driver.find_element_by_name('Submit2').click()
 # driver.current_window_handle()
 # driver.switch_to.window()
@@ -42,8 +49,8 @@
 #
 # # 关闭数据库连接
 # # db.close()
-for a in range(4):
-    print(a)
+# for a in range(4):
+#     print(a)
 
 
 

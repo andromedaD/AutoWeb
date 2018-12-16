@@ -1,11 +1,13 @@
 # -*- coding:UTF-8 -*-
-import  unittest
-from time import sleep
+import unittest
+
 from selenium.webdriver.common.by import By
+
+from Login.test_login import Login
+from driver import *
 from log_print import *
 from myunit import StartEnd
-from test_login import Login
-from driver import *
+
 
 class NewsPage(Login):
     url='/'

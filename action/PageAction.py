@@ -28,15 +28,61 @@ class Page():
     def title_(self):
         return self.driver.title
 
-    def find_element(self,*element_loc):#element_loc为定位元素path，(By.ID,'username')
-        return self.driver.find_element(*element_loc)
+    def find_element_(self,type,*element_loc):
+        if type=="id":
+            el=self.driver.find_element_by_id(*element_loc)
+            return el
+        elif type=="name":
+            el = self.driver.find_element_by_name(*element_loc)
+            return el
+        elif type=="xpath":
+            el=self.driver.find_element_by_xpath(*element_loc)
+            return el
+        elif type=="css":
+            el = self.driver.find_element_by_css_selector(*element_loc)
+            return el
+        elif type=="link_text":
+            el = self.driver.find_element_by_link_text(*element_loc)
+            return el
+        elif type=="partial_link_text":
+            el = self.driver.find_element_by_partial_link_text(*element_loc)
+            return el
+        else:
+            pass
 
-    def find_elements(self,*element_loc):#element_loc为定位元素path，(By.ID,'username')
-        return self.driver.find_elements(*element_loc)
+    def find_elements_(self,type,*element_loc):#element_loc为定位元素path，(By.ID,'username')
+        if type=="id":
+            el=self.driver.find_elements_by_id(*element_loc)
+            return el
+        elif type=="name":
+            el = self.driver.find_elements_by_name(*element_loc)
+            return el
+        elif type=="xpath":
+            el=self.driver.find_elements_by_xpath(*element_loc)
+            return el
+        elif type=="css":
+            el = self.driver.find_elements_by_css_selector(*element_loc)
+            return el
+        elif type=="link_text":
+            el = self.driver.find_elements_by_link_text(*element_loc)
+            return el
+        elif type=="partial_link_text":
+            el = self.driver.find_elements_by_partial_link_text(*element_loc)
+            return el
+        else:
+            pass
 
     def click_(self,element):
         element.click()
-        sleep(3)
+        sleep(2)
+
+    def accept_(self):#弹窗确认
+        self.driver.switch_to.alert.accept()
+        sleep(2)
+
+    def dismiss_(self): #弹窗取消
+        self.driver.switch_to.alert.dismiss()
+        sleep(2)
 
     def back_up_(self):
         self.driver.back()

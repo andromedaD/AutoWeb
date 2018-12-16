@@ -1,0 +1,5 @@
+Basepage:
+ check_info:
+  - name: localhost页面校验
+  - type: title
+  - value: 帝国网站管理系统 - Powered by EmpireCMS

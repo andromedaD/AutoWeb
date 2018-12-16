@@ -1,14 +1,39 @@
 # -*- coding:UTF-8 -*-
 import yaml
-def testDataInfo():
+import os
+def testDataInfo(path):
     '''测试数据'''
-    with open(r'D:\AutoWeb\test_data\testdata','rb') as fb:
+    curpath=os.path.dirname(os.path.realpath(__file__))
+    newpath=os.path.join(curpath,path)
+    with open(newpath,'rb') as fb:
         fb_stream=fb.read()
         testdata_info=yaml.load(fb_stream)
         fb.close()
     return testdata_info
 
-if __name__ == '__main__':
-    datas=testDataInfo()
-    for key,value in datas.items():
-        print(key,':',value)
+def testdataWrite(path,testdata):
+    curpath = os.path.dirname(os.path.realpath(__file__))
+    newpath = os.path.join(curpath, path)
+    with open(newpath,'w',encoding="utf-8") as fb:
+        yaml.dump(testdata,fb)
+
+
+
+# if __name__ == '__main__':
+#     #测试室读取
+#     datas=testDataInfo('testdata')
+#     for key,value in datas.items():
+#         print(key,':',value)
+#
+#     #测试写入
+#     testdata={
+#         'platformName': 'Android',
+#         'platformVersion': '7.0',
+#         'deviceName': 'A5RNW18316011440',
+#         'appPackage': 'com.tencent.mm',
+#         'appActivity': '.ui.LauncherUI',
+#         'automationName': 'Uiautomator2',
+#         'unicodeKeyboard': [True, "hh"],
+#         'resetKeyboard': True,
+#     }
+#     testdataWrite('Login',testdata)

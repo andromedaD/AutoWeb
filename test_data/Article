@@ -1,0 +1,37 @@
+Article:
+      master_page:
+          - name: xxx
+          - type: link_text
+          - value: 文章中心
+      part_page:
+          - name: xxx
+          - type: link_text
+          - value: 更多>>
+      check_ma:
+          - name: xxx
+          - type: str
+          - value: 文章中心 - Powered by EmpireCMS
+      n_status:
+          - name: 小说状态码
+          - type: int
+          - value: 0
+      check_nv:
+          - name: 验证小说页面字段
+          - type: str
+          - value: 小说 - Powered by EmpireCMS
+      p_status:
+          - name: 散文状态码
+          - type: int
+          - value: 1
+      check_pr:
+          - name: 验证散文页面字段
+          - type: str
+          - value: 散文 - Powered by EmpireCMS
+      portry_status:
+          - name: 诗歌状态码
+          - type: int
+          - value: 2
+      check_portry:
+          - name: 验证诗歌页面字段
+          - type: str
+          - value: 诗歌 - Powered by EmpireCMS
