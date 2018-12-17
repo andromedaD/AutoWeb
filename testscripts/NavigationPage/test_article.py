@@ -30,8 +30,9 @@ class TestArticlePage(StartEnd):
         newspage =ArticlePage(driver)
         newspage.open_browser_()
         newspage.login_page()
-        newspage.load_master_page(self.data['master_page'][1]['type'],
-                                  self.data['master_page'][2]['value']
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
                                   )
         try:
             title=newspage.check_title()
@@ -49,13 +50,15 @@ class TestArticlePage(StartEnd):
         newspage = ArticlePage(driver)
         newspage.open_browser_()
         newspage.login_page()
-        newspage.load_master_page(self.data['master_page'][1]['type'],
-                                  self.data['master_page'][2]['value']
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
                                   )
         try:
-            newspage.load_part_page(self.data['part_page'][1]['type'],
-                                    self.data['part_page'][2]['value'],
-                                    self.data['n_status'][2]['value']
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['n_status'][2]['value']
                                     )
             title=newspage.check_title()
             self.assertEqual(title,self.data['check_nv'][2]['value'])
@@ -72,12 +75,14 @@ class TestArticlePage(StartEnd):
         newspage = ArticlePage(driver)
         newspage.open_browser_()
         newspage.login_page()
-        newspage.load_master_page(self.data['master_page'][1]['type'],
-                                  self.data['master_page'][2]['value'])
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value'])
         try:
-            newspage.load_part_page(self.data['part_page'][1]['type'],
-                                    self.data['part_page'][2]['value'],
-                                    self.data['p_status'][2]['value']
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['p_status'][2]['value']
                                     )
             title = newspage.check_title()
             self.assertEqual(title, self.data['check_pr'][2]['value'])
@@ -94,12 +99,15 @@ class TestArticlePage(StartEnd):
         newspage = ArticlePage(driver)
         newspage.open_browser_()
         newspage.login_page()
-        newspage.load_master_page(self.data['master_page'][1]['type'],
-                                  self.data['master_page'][2]['value'])
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value'])
         try:
-            newspage.load_part_page(self.data['part_page'][1]['type'],
-                                    self.data['part_page'][2]['value'],
-                                    self.data['portry_status'][2]['value'])
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['portry_status'][2]['value']
+            )
             title = newspage.check_title()
             self.assertEqual(title,self.data['check_portry'][2]['value'])
         except Exception as msg:

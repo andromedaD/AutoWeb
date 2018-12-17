@@ -1,137 +1,170 @@
 # -*- coding:UTF-8 -*-
 import unittest
-
-from selenium.webdriver.common.by import By
-
 from Login.test_login import Login
 from driver import *
 from log_print import *
 from myunit import StartEnd
-
+from testdata import testDataInfo
 
 class Flashch(Login):
     url='/'
-    def load_master_page(self):
-        element=self.find_element(By.LINK_TEXT,'FLASH频道')
-        self.click_(element)
-        sleep(2)
-    def load_part_page(self,status):
-        # status=int(status)
-        elements=self.find_elements(By.LINK_TEXT,'更多>>')
-        self.click_(elements[status])
-        sleep(1)
-        return elements
+    def load_master_page(self, type, el_loc):
+        el = self.find_element_(type, el_loc)
+        self.click_(el)
+
+    def load_part_page(self, type, el_loc, status):
+        el = self.find_elements_(type, el_loc)
+        self.click_(el[status])
+        return el
+
     def check_title(self):
         return self.title_()
-#
+
 class TestFlashch(StartEnd):
     logger=get_log("test Flashchannel_page")
+    data=testDataInfo('Flashchannel')['Flashchannel']
     def test_flash_page(self):
         driver=browser()
         newspage =Flashch(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
             title=newspage.check_title()
-            self.assertEqual(title,'FLASH频道 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['check_ma'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load flash page is ok")
+            self.logger.info("test flash page is end")
             newspage.quit_browser_()
 
-    def test_game_page(self,h_status=0):
+    def test_game_page(self):
+        self.logger.info("Start test game_page")
         driver = browser()
         newspage = Flashch(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_part_page(h_status)
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['game_page']['game_status'][2]['value']
+            )
             title=newspage.check_title()
-            self.assertEqual(title,'游戏 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['game_page']['check_game'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load flash page is ok")
+            self.logger.info("test game page is end")
             newspage.quit_browser_()
 
-    def test_music_page(self, n_status=1):
+    def test_music_page(self):
+        self.logger.info("Start test music_page")
         driver = browser()
         newspage = Flashch(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_part_page(n_status)
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['music_page']['music_status'][2]['value']
+            )
             title = newspage.check_title()
-            self.assertEqual(title, '音乐MV - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['music_page']['check_music'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load music page is ok")
+            self.logger.info("test music page is end")
             newspage.quit_browser_()
 
-    def test_recommandnee_page(self):
-        elemen_loc = (By.LINK_TEXT,'葬花吟 古筝Flash音乐')
+    def test_recommand_page(self):
+        self.logger.info("Start test recommand_page")
         driver = browser()
         newspage = Flashch(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_element(*elemen_loc)
-            newspage.click_(element)
+            ele1= newspage.find_element_(
+                self.data['recommand_page']['ele1'][1]['type'],
+                self.data['recommand_page']['ele1'][2]['value']
+            )
+            newspage.click_(ele1)
             newspage.switch_new_window_()
             title = newspage.check_title()
-            self.assertEqual(title, '葬花吟 古筝Flash音乐 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['recommand_page']['check_re'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load recommandnee page is ok")
+            self.logger.info("test recommandnee page is end")
             newspage.quit_browser_()
 
-    def test_lastnee_page(self):
-        elemen_loc = (By.LINK_TEXT, '高山流水')
+    def test_lastfresh_page(self):
         driver = browser()
         newspage = Flashch(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_element(*elemen_loc)
-            newspage.click_(element)
+            ele1 = newspage.find_element_(
+                self.data['lastfresh_page']['ele1'][1]['type'],
+                self.data['lastfresh_page']['ele1'][2]['value']
+            )
+            newspage.click_(ele1)
             title = newspage.check_title()
-            self.assertEqual(title, '高山流水 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['lastfresh_page']['check_fresh'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load lastnee page is ok")
+            self.logger.info("test lastfresh_page is end")
             newspage.quit_browser_()
 
-    def test_hotned_page(self):
-        elemen_loc = (By.LINK_TEXT, '考验记忆力')
+    def test_hotclick_page(self):
+        self.logger.info("Start test hotclick")
         driver = browser()
         newspage = Flashch(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_element(*elemen_loc)
+            element = newspage.find_element_(
+                self.data['hotclick_page']['ele1'][1]['type'],
+                self.data['hotclick_page']['ele1'][2]['value']
+            )
             newspage.click_(element)
             title = newspage.check_title()
-            self.assertEqual(title, '考验记忆力 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['hotclick_page']['check_hot'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load hotnee page is ok")
+            self.logger.info("test hotnee page is end")
             newspage.quit_browser_()
 
 if __name__ == '__main__':

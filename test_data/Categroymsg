@@ -1,0 +1,184 @@
+Categroymsg:
+       master_page:
+            - name: 主页面定位
+            - type: link_text
+            - value: 分类信息
+       part_page:
+            - name: 分支页面定位
+            - type: link_text
+            - value: 更多>>
+       check_ma:
+            - name: 主页面验证
+            - type: str
+            - value: 分类信息 - Powered by EmpireCMS
+       h_status:
+            - name: 房屋信息页面状态码
+            - type: int
+            - value: 0
+       check_h:
+            - name: 验证房屋信息页面字段
+            - type: str
+            - value: 房屋信息 - Powered by EmpireCMS
+       fl_status:
+            - name: 跳蚤市场页面状态码
+            - type: int
+            - value: 1
+       check_fl:
+            - name: 验证跳蚤市场页面字段
+            - type: str
+            - value: 跳蚤市场 - Powered by EmpireCMS
+       city_status:
+            - name: 同城生活页面状态码
+            - type: int
+            - value: 2
+       check_city:
+            - name: 验证同城生活页面字段
+            - type: str
+            - value: 同城生活 - Powered by EmpireCMS
+       job_status:
+            - name: 求职招聘页面状态码
+            - type: int
+            - value: 3
+       check_job:
+            - name: 求职招聘页面字段
+            - type: str
+            - value: 求职招聘 - Powered by EmpireCMS
+       search:
+            - name: 搜索框定位
+            - type: css
+            - value: input[name="keyboard"]
+       search_keys:
+            - name: 搜索框输入值
+            - type: str
+            - value: 东城区
+       selector:
+            - name: 所有分类下拉框定位
+            - type: css
+            - value: select[name="classid"]
+       selector_value:
+            - name: 下拉框的值
+            - type: int
+            - value: 10
+       search_button:
+            - name: 搜索按钮元素定位
+            - type: css
+            - value: input[name="Submit2"]
+       check_search:
+            - name: 搜索按钮元素定位
+            - type: str
+            - value: 东城区 搜索结果 - Powered by EmpireCMS
+
+       addinfo:
+           ele1:
+                - name: 发布信息按钮定位元素
+                - type: link_text
+                - value: 发布信息
+           ele2:
+                - name: 下拉框定位元素
+                - type: css
+                - value: select[name="classid"]
+           ele2_value:
+                - name: 下拉框值
+                - type: int
+                - value: 11
+           ele3:
+                - name: 提交按钮元素定位
+                - type: css
+                - value: input[type="submit"]
+           checkinfo1:
+                - name: 验证小区title字段预期值
+                - type: str
+                - value: 增加信息
+           ele4:
+                - name: 信息标题输入框元素定位
+                - type: css
+                - value: td:nth-child(2) > input[type="text"]
+           content1:
+                - name: 信息标题输入文本
+                - type: str
+                - value: 东城区雨花小区
+           ele5:
+                - name: 信息内容元素定位
+                - type: css
+                - value: tr>td>textarea#smalltext
+           content2:
+                - name: 信息内容具体值
+                - type: str
+                - value: 租金平均10000
+           ele6:
+                - name: 联系邮箱定位
+                - type: css
+                - value: input#email
+           content3:
+                - name: 联系邮件内容具体值
+                - type: str
+                - value: 11223@qq.com
+           ele7:
+                - name: 增加信息提交按钮
+                - type: css
+                - value: input[type="submit"]:nth-child(1)
+           ele8:
+                - name: 发布信息页面链接定位元素
+                - type: link_text
+                - value: 管理分类信息
+           ele9:
+                - name: 验证元素定位，在为True
+                - type: link_text
+                - value: 东城区雨花小区
+
+       areamap:
+            ele1:
+                - name: 跳转东城区链接定位元素
+                - type: link_text
+                - value: 东城区
+            ele2:
+                - name: 子页面东城区验证定位元素
+                - type: css
+                - value: table[class="line_bottom"]
+
+       house:
+            ele1:
+                - name: 跳转房屋求租链接定位
+                - type: link_text
+                - value: 房屋求租
+            check_info:
+                - name: 房屋验证信息值
+                - type: assertEqual
+                - value: 房屋求租 - Powered by EmpireCMS
+       pc:
+            ele1:
+                - name: 跳转电脑配件链接定位
+                - type: link_text
+                - value: 电脑配件
+            check_info:
+                - name: 电脑配件子页面验证信息
+                - type: assertEqual
+                - value: 电脑配件 - Powered by EmpireCMS
+       citylife:
+            ele1:
+                - name: 跳转同城生活链接定位
+                - type: link_text
+                - value: 本地新闻
+            check_info:
+                - name: 同城生活验证信息
+                - type: assertEqual
+                - value: 本地新闻 - Powered by EmpireCMS
+
+       job:
+            ele1:
+                - name: 跳转工程技术链接定位
+                - type: link_text
+                - value: 工程技术
+            check_info:
+                - name: 工程技术验证信息
+                - type: assertEqual
+                - value: 工程技术 - Powered by EmpireCMS
+       hotclick:
+            ele1:
+                - name: 跳转热点点击链接页面元素定位
+                - type: link_text
+                - value: 德外/新房/急于出租
+            check_info:
+                - name: 页面验证信息值
+                - type: assertEqual
+                - value: 德外/新房/急于出租 - Powered by EmpireCMS

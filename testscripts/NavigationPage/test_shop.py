@@ -1,173 +1,223 @@
 # -*- coding:UTF-8 -*-
 import unittest
-
-from selenium.webdriver.common.by import By
-
 from Login.test_login import Login
 from driver import *
 from log_print import *
 from myunit import StartEnd
-
+from testdata import testDataInfo
 
 class ShopPage(Login):
     url='/'
-    def load_master_page(self):
-        element=self.find_element(By.LINK_TEXT,'网上商城')
-        self.click_(element)
-        sleep(2)
-    def load_part_page(self,status):
-        # status=int(status)
-        elements=self.find_elements(By.LINK_TEXT,'更多>>')
-        self.click_(elements[status])
-        sleep(1)
-        return elements
+    def load_master_page(self,type,el_loc):
+        el=self.find_element_(type,el_loc)
+        self.click_(el)
+
+    def load_part_page(self,type,el_loc,status):
+        el=self.find_elements_(type,el_loc)
+        self.click_(el[status])
+        return el
+
     def check_title(self):
         return self.title_()
 
 class TestShopPage(StartEnd):
     logger=get_log("test shop_page")
+    data=testDataInfo('Shop')['Shop']
     def test_shop_page(self):
+        self.logger.info("Start test shop_page")
         driver=browser()
         newspage =ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
             title=newspage.check_title()
-            self.assertEqual(title,'网上商城 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['check_ma'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load shop page is ok")
+            self.logger.info("test shop page is end")
             newspage.quit_browser_()
 
-    def test_digit_page(self,h_status=0):
+    def test_digit_page(self):
+        self.logger.info("Start test digit_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_part_page(h_status)
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['digit_page']['digit_status'][2]['value']
+            )
             title=newspage.check_title()
-            self.assertEqual(title,'手机数码 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['digit_page']['check_digit'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load digit page is ok")
+            self.logger.info("test digit page is end")
             newspage.quit_browser_()
 
-    def test_dianqi_page(self, n_status=1):
+    def test_dianqi_page(self):
+        self.logger.info("Start test dianqi_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_part_page(n_status)
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['dianqi_page']['dianqi_status'][2]['value']
+            )
             title = newspage.check_title()
-            self.assertEqual(title, '家用电器 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['dianqi_page']['check_dianqi'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load dianqi page is ok")
+            self.logger.info("test dianqi page is end")
             newspage.quit_browser_()
 
-    def test_pc_page(self, d_status=2):
+    def test_pc_page(self):
+        self.logger.info("Start test pc_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_part_page(d_status)
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['pc_page']['pc_status'][2]['value']
+            )
             title = newspage.check_title()
-            self.assertEqual(title, '品牌电脑 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['pc_page']['check_pc'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load pc page is ok")
+            self.logger.info("test pc page is end")
             newspage.quit_browser_()
 
-    def test_book_page(self, s_status=3):
+    def test_book_page(self):
+        self.logger.info("Start test book_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_part_page(s_status)
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['book_page']['book_status'][2]['value']
+            )
             title = newspage.check_title()
-            self.assertEqual(title, '图书杂志 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['book_page']['check_book'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load book page is ok")
+            self.logger.info("test book page is end")
             newspage.quit_browser_()
 
-    def test_recommandned_page(self):
-        elemen_loc = (By.XPATH, '/html/body/table[4]/tbody/tr/td[2]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/a/img')
+    def test_recommand_page(self):
+        self.logger.info("Start test recommand_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_element(*elemen_loc)
-            newspage.click_(element)
+            ele1 = newspage.find_element_(
+                self.data['recommand_page']['ele1'][1]['type'],
+                self.data['recommand_page']['ele1'][2]['value']
+            )
+            newspage.click_(ele1)
             newspage.switch_new_window_()
             title = newspage.check_title()
-            self.assertEqual(title, '惠普笔记本电脑DV2803TX - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['recommand_page']['check_recommand'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load recommandned page is ok")
+            self.logger.info("test recommandned page is end")
             newspage.quit_browser_()
 
-    def test_lastned_page(self):
-        elemen_loc = (By.LINK_TEXT, '优化建模与LINDO\LINGO软件')
+    def test_lastfresh_page(self):
+        self.logger.info("Start test lastfresh_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_element(*elemen_loc)
-            newspage.click_(element)
+            ele1 = newspage.find_element_(
+                self.data['lastfresh_page']['ele1'][1]['type'],
+                self.data['lastfresh_page']['ele1'][2]['value']
+            )
+            newspage.click_(ele1)
             title = newspage.check_title()
-            self.assertEqual(title, '优化建模与LINDO\LINGO软件 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['lastfresh_page']['check_lastfresh'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load lastned page is ok")
+            self.logger.info("test lastned page is end")
             newspage.quit_browser_()
 
-    def test_hotned_page(self):
-        elemen_loc = (By.LINK_TEXT, '柯达数码相机C713')
+    def test_hotclick_page(self):
+        self.logger.info("Start test hotclick_page")
         driver = browser()
         newspage = ShopPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_master_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+            )
         try:
-            element = newspage.find_element(*elemen_loc)
-            newspage.click_(element)
+            ele1 = newspage.find_element_(
+                self.data['hotclick_page']['ele1'][1]['type'],
+                self.data['hotclick_page']['ele1'][2]['value']
+            )
+            newspage.click_(ele1)
             title = newspage.check_title()
-            self.assertEqual(title, '柯达数码相机C713 - Powered by EmpireCMS')
+            self.assertEqual(title,self.data['hotclick_page']['check_hotclick'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load hotned page is ok")
+            self.logger.info("test hotned page is end")
             newspage.quit_browser_()
-
 
 if __name__ == '__main__':
     unittest.main()

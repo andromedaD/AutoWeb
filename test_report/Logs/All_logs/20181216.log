@@ -1,0 +1,54 @@
+
+2018-12-16 12:50:50,620 - test_login - INFO - Start login
+2018-12-16 12:51:05,023 - test_login - INFO - login你 is end
+2018-12-16 13:58:43,199 - Start test logout - ERROR - Message: Unable to locate element: {"method":"link text","selector":"登出"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpdcr0vxyn/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpdcr0vxyn/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-16 13:58:45,547 - Start test logout - INFO - test log out is end
+2018-12-16 13:59:32,787 - Start test logout - ERROR - Message: Unable to locate element: {"method":"link text","selector":"我的空间"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpte45wvah/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpte45wvah/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-16 13:59:35,125 - Start test logout - INFO - test log out is end
+2018-12-16 14:02:20,623 - Start test logout - ERROR - Message: Unable to locate element: {"method":"name","selector":"我的空间"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmp5z2w4_f4/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmp5z2w4_f4/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-16 14:02:22,979 - Start test logout - INFO - test log out is end
+2018-12-16 14:03:56,540 - Start test logout - ERROR - '' is not true
+2018-12-16 14:03:58,884 - Start test logout - INFO - test log out is end
+2018-12-16 14:08:17,651 - test logout - ERROR - '' is not None
+2018-12-16 14:08:19,970 - test logout - INFO - test log out is end
+2018-12-16 14:09:48,101 - test logout - INFO - test log out is end
+2018-12-16 14:30:47,985 - test logout - INFO - Start test logout
+2018-12-16 14:31:16,703 - test logout - INFO - test logout is end
+2018-12-16 14:35:18,910 - test BasePage - INFO - Start test_open_browser_
+2018-12-16 14:35:22,701 - test BasePage - INFO - open browser is ok
+2018-12-16 14:44:13,907 - test BasePage - INFO - Start test_open_browser_
+2018-12-16 14:44:17,689 - test BasePage - INFO - open browser is ok
+2018-12-16 15:18:45,882 - test Articl_page - INFO - Start test article_page 
+2018-12-16 15:19:34,651 - test Articl_page - INFO - test article page is end
+2018-12-16 15:19:37,001 - test Articl_page - INFO - Start test novel 
+2018-12-16 15:20:42,662 - test Articl_page - INFO - test novel page is end
+2018-12-16 15:43:00,695 - test Articl_page - INFO - Start test article_page 
+2018-12-16 15:43:42,875 - test Articl_page - INFO - test article page is end
+2018-12-16 15:43:45,213 - test Articl_page - INFO - Start test novel 
+2018-12-16 15:44:26,923 - test Articl_page - ERROR - 'h_status'
+2018-12-16 15:44:29,286 - test Articl_page - INFO - test novel page is end
+2018-12-16 15:44:32,292 - test Articl_page - INFO - Start test porse_page
+2018-12-16 15:45:18,275 - test Articl_page - INFO - test porse page is end
+2018-12-16 15:45:20,606 - test Articl_page - INFO - Start test portry
+2018-12-16 15:46:06,222 - test Articl_page - INFO - test poetry page is end
+2018-12-16 16:28:35,807 - test categroy_msg_page - INFO - Start test categroymsg_page
+2018-12-16 16:28:57,523 - test categroy_msg_page - INFO - test category msg page is end
+2018-12-16 16:41:52,372 - test categroy_msg_page - INFO - Start test categroymsg_page
+2018-12-16 16:42:13,339 - test categroy_msg_page - INFO - test category msg page is end
+2018-12-16 16:42:39,365 - test categroy_msg_page - INFO - test citylife page is end
+2018-12-16 16:43:05,550 - test categroy_msg_page - INFO - test fleamall page is end
+2018-12-16 16:43:31,716 - test categroy_msg_page - INFO - test house page is end
+2018-12-16 17:41:09,555 - test categroy_msg_page - ERROR - 'search_button'
+2018-12-16 17:41:11,906 - test categroy_msg_page - INFO - test search is end 
+2018-12-16 17:44:16,153 - test categroy_msg_page - ERROR - 'check_search'
+2018-12-16 17:44:18,515 - test categroy_msg_page - INFO - test search is end 
+2018-12-16 17:45:35,926 - test categroy_msg_page - INFO - test search is end 

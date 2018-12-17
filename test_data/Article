@@ -1,14 +1,14 @@
 Article:
       master_page:
-          - name: xxx
+          - name: 主页面定位
           - type: link_text
           - value: 文章中心
       part_page:
-          - name: xxx
+          - name: 分支页面定位
           - type: link_text
           - value: 更多>>
       check_ma:
-          - name: xxx
+          - name: 主页面验证
           - type: str
           - value: 文章中心 - Powered by EmpireCMS
       n_status:

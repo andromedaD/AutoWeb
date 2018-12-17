@@ -1,182 +1,225 @@
 # -*- coding:UTF-8 -*-
 import unittest
 
-from selenium.webdriver.common.by import By
-
 from Login.test_login import Login
 from driver import *
 from log_print import *
 from myunit import StartEnd
-
+from testdata import testDataInfo
 
 class NewsPage(Login):
     url='/'
-    def load_news_page(self):
-        element=self.find_element(By.LINK_TEXT,'新闻中心')
-        self.click_(element)
-        sleep(2)
-    def load_newspart_page(self,status):
-        # status=int(status)
-        elements=self.find_elements(By.LINK_TEXT,'更多>>')
-        self.click_(elements[status])
-        sleep(1)
-        return elements
-    def check_news_title(self):
+    def load_master_page(self, type, el_loc):
+        el = self.find_element_(type, el_loc)
+        self.click_(el)
+
+    def load_part_page(self, type, el_loc, status):
+        el = self.find_elements_(type, el_loc)
+        self.click_(el[status])
+        return el
+
+    def check_title(self):
         return self.title_()
 
 class TestNewsPage(StartEnd):
     logger=get_log("test news_page")
+    data=testDataInfo('News')['News']
     def test_news_page(self):
+        self.logger.info("Start test news_page")
         driver=browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            title=newspage.check_news_title()
-            self.assertEqual(title,'新闻中心 - Powered by EmpireCMS')
+            title=newspage.check_title()
+            self.assertEqual(title,self.data['check_ma'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load news page is ok")
+            self.logger.info("test news page is end")
             newspage.quit_browser_()
 
-    def test_homenews_page(self,h_status=0):
+    def test_homenews_page(self):
+        self.logger.info("Start test homenews_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_newspart_page(h_status)
-            title=newspage.check_news_title()
-            self.assertEqual(title,'国内新闻 - Powered by EmpireCMS')
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['homenews_page']['homenews_status'][2]['value']
+            )
+            title=newspage.check_title()
+            self.assertEqual(title,self.data['homenews_page']['check_homenews'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load home news page is ok")
+            self.logger.info("test home news page is end")
             newspage.quit_browser_()
 
-    def test_nationalnews_page(self, n_status=1):
+    def test_nationalnews_page(self):
+        self.logger.info("Start test nationalnews_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_newspart_page(n_status)
-            title = newspage.check_news_title()
-            self.assertEqual(title, '国际新闻 - Powered by EmpireCMS')
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['nationalnews_page']['nationalnews_status'][2]['value']
+            )
+            title = newspage.check_title()
+            self.assertEqual(title,self.data['nationalnews_page']['check_nationalnews'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load nation news page is ok")
+            self.logger.info("test nation news page is end")
             newspage.quit_browser_()
 
-    def test_disportnews_page(self, d_status=2):
+    def test_disportnews_page(self):
+        self.logger.info("Start test disportnews_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_newspart_page(d_status)
-            title = newspage.check_news_title()
-            self.assertEqual(title, '娱乐新闻 - Powered by EmpireCMS')
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['disportnews_page']['disportnews_status'][2]['value']
+            )
+            title = newspage.check_title()
+            self.assertEqual(title,self.data['disportnews_page']['check_disportnews'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load disport news page is ok")
+            self.logger.info("test disport news page is end")
             newspage.quit_browser_()
 
-    def test_sportnews_page(self, s_status=3):
+    def test_sportnews_page(self):
+        self.logger.info("Start test sportnews_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            newspage.load_newspart_page(s_status)
-            title = newspage.check_news_title()
-            self.assertEqual(title, '体育新闻 - Powered by EmpireCMS')
+            newspage.load_part_page(
+                self.data['part_page'][1]['type'],
+                self.data['part_page'][2]['value'],
+                self.data['sportnews_page']['sportnews_status'][2]['value']
+            )
+            title = newspage.check_title()
+            self.assertEqual(title,self.data['sportnews_page']['check_sportnews'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load sport news page is ok")
+            self.logger.info("test sport news page is end")
             newspage.quit_browser_()
 
 
     def test_recommandnews_page(self):
-        elemen_loc= (By.LINK_TEXT, '中国男乒第16次捧起斯')
+        self.logger.info("Start test recommandnews_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element=newspage.find_element(*elemen_loc)
-            newspage.click_(element)
+            ele1=newspage.find_element_(
+                self.data['recommandnews_page']['ele1'][1]['type'],
+                self.data['recommandnews_page']['ele1'][2]['value']
+            )
+            newspage.click_(ele1)
             newspage.switch_new_window_()
-            title = newspage.check_news_title()
-            self.assertEqual(title, '中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS')
+            title = newspage.check_title()
+            self.assertEqual(title,self.data['recommandnews_page']['check_re'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load recommandnews page is ok")
+            self.logger.info("test recommandnews page is end")
             newspage.quit_browser_()
 
-    def test_lastnews_page(self):
-        elemen_loc = (By.LINK_TEXT, '中国男乒第16次捧起斯韦思林杯')
+    def test_lastfresh_page(self):
+        self.logger.info("Start test lastfresh_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_elements(*elemen_loc)
-            newspage.click_(element[0])
-            title = newspage.check_news_title()
-            self.assertEqual(title, '中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS')
+            ele1 = newspage.find_elements_(
+                self.data['lastfresh_page']['ele1'][1]['type'],
+                self.data['lastfresh_page']['ele1'][2]['value']
+            )[self.data['lastfresh_page']['status'][2]['value']]
+            newspage.click_(ele1)
+            title = newspage.check_title()
+            self.assertEqual(title,self.data['lastfresh_page']['check_fresh'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load lastnews page is ok")
+            self.logger.info("test lastfresh_page is ok")
             newspage.quit_browser_()
 
-    def test_hotnews_page(self):
-        elemen_loc = (By.LINK_TEXT, '中国男乒第16次捧起斯韦思林杯')
+    def test_hotclick_page(self):
+        self.logger.info("Start test hotclick_page")
         driver = browser()
         newspage = NewsPage(driver)
         newspage.open_browser_()
-        newspage.type_username()
-        newspage.load_news_page()
+        newspage.login_page()
+        newspage.load_master_page(
+            self.data['master_page'][1]['type'],
+            self.data['master_page'][2]['value']
+        )
         try:
-            element = newspage.find_elements(*elemen_loc)
-            newspage.click_(element[1])
-            title = newspage.check_news_title()
-            self.assertEqual(title, '中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS')
+            ele1= newspage.find_elements_(
+                self.data['hotclick_page']['ele1'][1]['type'],
+                self.data['hotclick_page']['ele1'][2]['value']
+            )[self.data['hotclick_page']['status'][2]['value']]
+            newspage.click_(ele1)
+            title = newspage.check_title()
+            self.assertEqual(title,self.data['hotclick_page']['check_hot'][2]['value'])
         except Exception as msg:
             self.logger.error(msg)
             newspage.quit_browser_()
         finally:
-            self.logger.info("load hotnews page is ok")
+            self.logger.info("test hotclick_page is end")
             newspage.quit_browser_()
 
 if __name__ == '__main__':
     unittest.main()
-
-# driver=browser()
-# newspage = NewsPage(driver)
-# newspage.open_browser_()
-# newspage.type_username()
-# newspage.load_news_page()
-# element=newspage.load_newspart_page()
-# print(element)
-# newspage.quit_browser_()

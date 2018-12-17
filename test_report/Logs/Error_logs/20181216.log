@@ -1,0 +1,18 @@
+2018-12-16 12:44:30,360 - test_login - ERROR - test_login -50 - find_element_by_link_text() takes 2 positional arguments but 5 were given
+2018-12-16 13:58:43,199 - Start test logout - ERROR - test_logout -39 - Message: Unable to locate element: {"method":"link text","selector":"登出"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpdcr0vxyn/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpdcr0vxyn/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-16 13:59:32,787 - Start test logout - ERROR - test_logout -39 - Message: Unable to locate element: {"method":"link text","selector":"我的空间"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpte45wvah/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmpte45wvah/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-16 14:02:20,623 - Start test logout - ERROR - test_logout -39 - Message: Unable to locate element: {"method":"name","selector":"我的空间"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmp5z2w4_f4/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmp5z2w4_f4/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+2018-12-16 14:03:56,540 - Start test logout - ERROR - test_logout -39 - '' is not true
+2018-12-16 14:08:17,651 - test logout - ERROR - test_logout -39 - '' is not None
+2018-12-16 15:44:26,923 - test Articl_page - ERROR - test_article -63 - 'h_status'
+2018-12-16 17:41:09,555 - test categroy_msg_page - ERROR - test_categroymsg -159 - 'search_button'
+2018-12-16 17:44:16,153 - test categroy_msg_page - ERROR - test_categroymsg -159 - 'check_search'
