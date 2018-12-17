@@ -1,0 +1,86 @@
+TVchannel:
+      master_page:
+          - name: 主页面定位
+          - type: link_text
+          - value: 影视频道
+
+      part_page:
+          - name: 分支页面定位
+          - type: link_text
+          - value: 更多>>
+
+      check_ma:
+          - name: 主页面验证
+          - type: str
+          - value: 影视频道 - Powered by EmpireCMS
+
+      actionvideo_page:
+          actionvideo_status:
+                  - name: 动作片页面状态码状态码
+                  - type: int
+                  - value: 0
+          check_actionvideo:
+                  - name: 验证动作片页面字段
+                  - type: str
+                  - value: 动作片 - Powered by EmpireCMS
+
+      lovevideo_page:
+            lovevideo_status:
+                  - name: 爱情片状态码
+                  - type: int
+                  - value: 1
+            check_lovevideo:
+                  - name: 验证爱情片页面字段
+                  - type: str
+                  - value: 爱情片 - Powered by EmpireCMS
+
+      comedy_page:
+            comedy_status:
+                  - name: 喜剧片状态码
+                  - type: int
+                  - value: 2
+            check_comedy:
+                  - name: 验证喜剧片页面字段
+                  - type: str
+                  - value: 喜剧片 - Powered by EmpireCMS
+
+      sitcome_page:
+            sitcome_status:
+                  - name: 连续剧状态码
+                  - type: int
+                  - value: 3
+            check_book:
+                  - name: 验证连续剧页面字段
+                  - type: str
+                  - value: 连续剧 - Powered by EmpireCMS
+
+
+      recommand_page:
+            ele1:
+                  - name: 西雅图夜未眠链接定位元素
+                  - type: link_text
+                  - value: 西雅图夜未眠
+            check_recommand:
+                  - name: 验证西雅图夜未眠页面字段
+                  - type: str
+                  - value: 西雅图夜未眠 - Powered by EmpireCMS
+
+      lastfresh_page:
+            ele1:
+                  - name: 三国演义06链接定位元素
+                  - type: link_text
+                  - value: 三国演义06
+            check_lastfresh:
+                  - name: 三国演义06页面字段
+                  - type: str
+                  - value: 三国演义06 - Powered by EmpireCMS
+
+      hotclick_page:
+            ele1:
+                  - name: 刀剑笑链接定位元素
+                  - type: link_text
+                  - value: 刀剑笑
+            check_hotclick:
+                  - name: 刀剑笑页面字段
+                  - type: str
+                  - value: 刀剑笑 - Powered by EmpireCMS

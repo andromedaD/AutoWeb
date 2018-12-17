@@ -1,0 +1,186 @@
+2018-12-17 09:32:49,604 - test categroy_msg_page - INFO - Start test addinfo
+2018-12-17 09:33:28,249 - test categroy_msg_page - INFO - test addinfo is end
+2018-12-17 09:45:19,183 - test categroy_msg_page - INFO - Start test areamap
+2018-12-17 09:45:43,480 - test categroy_msg_page - INFO - test areamap  is end 
+2018-12-17 09:53:20,708 - test categroy_msg_page - INFO - test house is end
+2018-12-17 10:20:56,975 - test categroy_msg_page - INFO - Start test citylife
+2018-12-17 10:21:26,055 - test categroy_msg_page - INFO - test citylife is end
+2018-12-17 10:21:28,399 - test categroy_msg_page - INFO - Start test hotclick
+2018-12-17 10:21:52,334 - test categroy_msg_page - INFO - test hotclick is end
+2018-12-17 10:21:54,667 - test categroy_msg_page - INFO - Start test job
+2018-12-17 10:22:18,116 - test categroy_msg_page - INFO - test job is end
+2018-12-17 10:22:20,442 - test categroy_msg_page - INFO - Start test pc
+2018-12-17 10:22:44,017 - test categroy_msg_page - INFO - test pc is end
+2018-12-17 11:21:13,735 - test download_page - INFO - Start test downloadpage
+2018-12-17 11:21:35,485 - test download_page - INFO - test download page is end
+2018-12-17 11:21:37,845 - test download_page - INFO - Start test hotclick_page
+2018-12-17 11:21:37,849 - test download_page - INFO - Start test lastfresh_page
+2018-12-17 11:21:59,141 - test download_page - ERROR - 'NoneType' object has no attribute 'click'
+2018-12-17 11:22:01,508 - test download_page - INFO - test lastfresh page is end
+2018-12-17 11:22:04,515 - test download_page - INFO - Start test mediatools_page
+2018-12-17 11:22:31,135 - test download_page - INFO - test sport mediatools page is end
+2018-12-17 11:22:33,492 - test download_page - INFO - Start test nettols
+2018-12-17 11:22:57,654 - test download_page - INFO - test nettools page is end
+2018-12-17 11:23:00,013 - test download_page - INFO - Start test recommand_page
+2018-12-17 11:23:21,363 - test download_page - ERROR - 'NoneType' object has no attribute 'click'
+2018-12-17 11:23:23,737 - test download_page - INFO - test recommandnewb page is end
+2018-12-17 11:23:26,741 - test download_page - INFO - Start test safetools_page
+2018-12-17 11:23:50,661 - test download_page - INFO - test safetools news page is end
+2018-12-17 11:23:53,010 - test download_page - INFO - Start test sys_page
+2018-12-17 11:24:14,308 - test download_page - ERROR - 'sys_page'
+2018-12-17 11:24:16,667 - test download_page - INFO - test sys news page is end
+2018-12-17 11:30:08,624 - test download_page - INFO - Start test lastfresh_page
+2018-12-17 11:30:30,290 - test download_page - ERROR - 'NoneType' object has no attribute 'click'
+2018-12-17 11:30:32,633 - test download_page - INFO - test lastfresh page is end
+2018-12-17 11:30:35,637 - test download_page - INFO - Start test sys_page
+2018-12-17 11:30:57,242 - test download_page - ERROR - 'sys_page'
+2018-12-17 11:30:59,615 - test download_page - INFO - test sys news page is end
+2018-12-17 11:32:13,226 - test download_page - INFO - Start test lastfresh_page
+2018-12-17 11:32:37,207 - test download_page - INFO - test lastfresh page is end
+2018-12-17 11:32:39,552 - test download_page - INFO - Start test sys_page
+2018-12-17 11:33:01,300 - test download_page - ERROR - 'sys_page'
+2018-12-17 11:33:03,646 - test download_page - INFO - test sys news page is end
+2018-12-17 11:34:40,961 - test download_page - INFO - Start test lastfresh_page
+2018-12-17 11:35:06,371 - test download_page - INFO - test lastfresh page is end
+2018-12-17 11:35:08,734 - test download_page - INFO - Start test sys_page
+2018-12-17 11:35:29,926 - test download_page - ERROR - 'sys_page'
+2018-12-17 11:35:32,281 - test download_page - INFO - test sys news page is end
+2018-12-17 11:37:43,763 - test download_page - INFO - Start test sys_page
+2018-12-17 11:38:09,095 - test download_page - INFO - test sys news page is end
+2018-12-17 11:40:47,333 - test download_page - INFO - Start test downloadpage
+2018-12-17 11:41:09,997 - test download_page - INFO - test download page is end
+2018-12-17 11:41:12,382 - test download_page - INFO - Start test hotclick_page
+2018-12-17 11:41:12,386 - test download_page - INFO - Start test lastfresh_page
+2018-12-17 11:41:36,464 - test download_page - INFO - test lastfresh page is end
+2018-12-17 11:41:38,822 - test download_page - INFO - Start test mediatools_page
+2018-12-17 11:42:03,251 - test download_page - INFO - test sport mediatools page is end
+2018-12-17 11:42:05,602 - test download_page - INFO - Start test nettols
+2018-12-17 11:42:33,358 - test download_page - INFO - test nettools page is end
+2018-12-17 11:42:35,706 - test download_page - INFO - Start test recommand_page
+2018-12-17 11:42:59,635 - test download_page - INFO - test recommandnewb page is end
+2018-12-17 11:43:01,996 - test download_page - INFO - Start test safetools_page
+2018-12-17 11:43:26,097 - test download_page - INFO - test safetools news page is end
+2018-12-17 11:43:28,446 - test download_page - INFO - Start test sys_page
+2018-12-17 11:43:52,402 - test download_page - INFO - test sys news page is end
+2018-12-17 13:20:54,019 - test Flashchannel_page - INFO - test flash page is end
+2018-12-17 13:20:56,342 - test Flashchannel_page - INFO - Start test game_page
+2018-12-17 13:21:24,860 - test Flashchannel_page - INFO - test game page is end
+2018-12-17 13:21:27,169 - test Flashchannel_page - INFO - Start test hotclick
+2018-12-17 13:21:53,043 - test Flashchannel_page - INFO - test hotnee page is end
+2018-12-17 13:22:23,639 - test Flashchannel_page - INFO - test lastfresh_page is end
+2018-12-17 13:22:25,972 - test Flashchannel_page - INFO - Start test music_page
+2018-12-17 13:22:52,211 - test Flashchannel_page - INFO - test music page is end
+2018-12-17 13:22:54,521 - test Flashchannel_page - INFO - Start test recommand_page
+2018-12-17 13:23:19,236 - test Flashchannel_page - INFO - test recommandnee page is end
+2018-12-17 14:13:44,731 - test news_page - INFO - Start test disportnews_page
+2018-12-17 14:14:09,199 - test news_page - ERROR - 'check_disportnews'
+2018-12-17 14:14:11,540 - test news_page - INFO - test disport news page is end
+2018-12-17 14:14:14,545 - test news_page - INFO - Start test homenews_page
+2018-12-17 14:14:38,709 - test news_page - INFO - test home news page is end
+2018-12-17 14:14:41,046 - test news_page - INFO - Start test hotclick_page
+2018-12-17 14:15:02,217 - test news_page - ERROR - find_elements_by_link_text() takes 2 positional arguments but 3 were given
+2018-12-17 14:15:04,539 - test news_page - INFO - load hotnews page is ok
+2018-12-17 14:15:07,545 - test news_page - INFO - Start test lastfresh_page
+2018-12-17 14:15:28,751 - test news_page - ERROR - find_elements_by_link_text() takes 2 positional arguments but 3 were given
+2018-12-17 14:15:31,081 - test news_page - INFO - test lastfresh_page is ok
+2018-12-17 14:15:34,084 - test news_page - INFO - Start test nationalnews_page
+2018-12-17 14:15:58,125 - test news_page - INFO - test nation news page is end
+2018-12-17 14:16:00,453 - test news_page - INFO - Start test news_page
+2018-12-17 14:16:21,890 - test news_page - INFO - test news page is end
+2018-12-17 14:16:24,209 - test news_page - INFO - Start test recommandnews_page
+2018-12-17 14:16:45,396 - test news_page - ERROR - find_element_by_link_text() takes 2 positional arguments but 3 were given
+2018-12-17 14:16:47,746 - test news_page - INFO - test recommandnews page is end
+2018-12-17 14:16:50,753 - test news_page - INFO - Start test sportnews_page
+2018-12-17 14:17:14,718 - test news_page - INFO - test sport news page is end
+2018-12-17 14:24:54,157 - test news_page - INFO - Start test disportnews_page
+2018-12-17 14:25:18,412 - test news_page - ERROR - 'check_disportnews'
+2018-12-17 14:25:20,741 - test news_page - INFO - test disport news page is end
+2018-12-17 14:25:23,754 - test news_page - INFO - Start test homenews_page
+2018-12-17 14:25:47,745 - test news_page - INFO - test home news page is end
+2018-12-17 14:25:50,069 - test news_page - INFO - Start test hotclick_page
+2018-12-17 14:26:15,935 - test news_page - INFO - test hotclick_page is end
+2018-12-17 14:26:18,292 - test news_page - INFO - Start test lastfresh_page
+2018-12-17 14:26:42,916 - test news_page - INFO - test lastfresh_page is ok
+2018-12-17 14:26:45,260 - test news_page - INFO - Start test nationalnews_page
+2018-12-17 14:27:09,161 - test news_page - INFO - test nation news page is end
+2018-12-17 14:27:11,494 - test news_page - INFO - Start test news_page
+2018-12-17 14:27:32,840 - test news_page - INFO - test news page is end
+2018-12-17 14:27:35,162 - test news_page - INFO - Start test recommandnews_page
+2018-12-17 14:27:58,918 - test news_page - INFO - test recommandnews page is end
+2018-12-17 14:28:01,283 - test news_page - INFO - Start test sportnews_page
+2018-12-17 14:28:25,417 - test news_page - INFO - test sport news page is end
+2018-12-17 14:30:08,932 - test news_page - INFO - Start test disportnews_page
+2018-12-17 14:30:32,805 - test news_page - INFO - test disport news page is end
+2018-12-17 15:27:16,201 - test Picturechannel_page - INFO - Start test animotion_page
+2018-12-17 15:27:40,045 - test Picturechannel_page - INFO - test animotion page is end
+2018-12-17 15:27:42,376 - test Picturechannel_page - INFO - Start test hotclick_page
+2018-12-17 15:27:42,380 - test Picturechannel_page - INFO - Start test lastfresh_page
+2018-12-17 15:28:06,113 - test Picturechannel_page - INFO - test lastfresh_page is end
+2018-12-17 15:28:32,444 - test Picturechannel_page - INFO - test nature page is end
+2018-12-17 15:28:34,779 - test Picturechannel_page - INFO - Start test picturech_page
+2018-12-17 15:28:57,433 - test Picturechannel_page - INFO - test picturech page is end
+2018-12-17 15:28:59,767 - test Picturechannel_page - INFO - Start test recommand_page
+2018-12-17 15:29:23,456 - test Picturechannel_page - INFO - test recommandnef page is end
+2018-12-17 15:29:25,827 - test Picturechannel_page - INFO - Start test star_page 
+2018-12-17 15:29:49,649 - test Picturechannel_page - INFO - test star page is end
+2018-12-17 15:34:16,367 - test Picturechannel_page - INFO - Start test hotclick_page
+2018-12-17 15:34:39,942 - test Picturechannel_page - INFO - test hotclick page is end
+2018-12-17 16:23:25,587 - test shop_page - INFO - Start test book_page
+2018-12-17 16:24:08,262 - test shop_page - ERROR - list index out of range
+2018-12-17 16:24:10,600 - test shop_page - INFO - test book page is end
+2018-12-17 16:24:13,613 - test shop_page - INFO - Start test dianqi_page
+2018-12-17 16:24:38,735 - test shop_page - ERROR - [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+2018-12-17 16:24:41,990 - test shop_page - INFO - test dianqi page is end
+2018-12-17 16:24:44,993 - test shop_page - INFO - Start test digit_page
+2018-12-17 16:25:08,977 - test shop_page - INFO - Start test book_page
+2018-12-17 16:27:33,734 - test shop_page - ERROR - 'check_pc'
+2018-12-17 16:27:36,078 - test shop_page - INFO - test book page is end
+2018-12-17 16:27:39,076 - test shop_page - INFO - Start test dianqi_page
+2018-12-17 16:28:04,408 - test shop_page - INFO - test dianqi page is end
+2018-12-17 16:28:06,741 - test shop_page - INFO - Start test digit_page
+2018-12-17 16:28:31,772 - test shop_page - INFO - test digit page is end
+2018-12-17 16:28:34,137 - test shop_page - INFO - Start test hotclick_page
+2018-12-17 16:29:00,143 - test shop_page - INFO - test hotned page is end
+2018-12-17 16:29:02,479 - test shop_page - INFO - Start test lastfresh_page
+2018-12-17 16:31:28,901 - test shop_page - INFO - test lastned page is end
+2018-12-17 16:31:31,285 - test shop_page - INFO - Start test pc_page
+2018-12-17 16:31:56,853 - test shop_page - INFO - test pc page is end
+2018-12-17 16:31:59,193 - test shop_page - INFO - Start test recommand_page
+2018-12-17 16:32:23,765 - test shop_page - INFO - test recommandned page is end
+2018-12-17 16:32:26,113 - test shop_page - INFO - Start test shop_page
+2018-12-17 16:32:48,622 - test shop_page - INFO - test shop page is end
+2018-12-17 16:35:17,486 - test shop_page - INFO - Start test book_page
+2018-12-17 16:37:43,013 - test shop_page - INFO - test book page is end
+2018-12-17 17:10:12,681 - test tvchannel_page - INFO - Start test actionvideo_page
+2018-12-17 17:10:36,731 - test tvchannel_page - INFO - test action video page is end
+2018-12-17 17:10:39,067 - test tvchannel_page - INFO - Start test comedy_page
+2018-12-17 17:11:03,070 - test tvchannel_page - INFO - test comedy page is end
+2018-12-17 17:11:05,410 - test tvchannel_page - INFO - Start test hotclick_page
+2018-12-17 17:11:29,349 - test tvchannel_page - INFO - load hotnec page is ok
+2018-12-17 17:11:31,707 - test tvchannel_page - INFO - Start test lastfresh_page
+2018-12-17 17:11:55,818 - test tvchannel_page - INFO - test lastfresh_page is end
+2018-12-17 17:11:58,204 - test tvchannel_page - INFO - Start test lovevideo_page
+2018-12-17 17:12:22,565 - test tvchannel_page - ERROR - '爱情片 - Powered by EmpireCMS' != 1
+2018-12-17 17:12:24,945 - test tvchannel_page - INFO - test lovevideo page is end
+2018-12-17 17:12:27,946 - test tvchannel_page - INFO - Start test recommand_page
+2018-12-17 17:12:53,212 - test tvchannel_page - INFO - tesst recommandnec page is end
+2018-12-17 17:12:55,563 - test tvchannel_page - INFO - Start test sitcome_page
+2018-12-17 17:13:20,830 - test tvchannel_page - INFO - test sitcome page is end
+2018-12-17 17:13:23,170 - test tvchannel_page - INFO - Start test tvchannel
+2018-12-17 17:13:45,860 - test tvchannel_page - INFO - test tvchannel page is end
+2018-12-17 17:17:25,283 - test tvchannel_page - INFO - Start test actionvideo_page
+2018-12-17 17:17:52,316 - test tvchannel_page - INFO - test action video page is end
+2018-12-17 17:17:54,667 - test tvchannel_page - INFO - Start test comedy_page
+2018-12-17 17:18:18,528 - test tvchannel_page - INFO - test comedy page is end
+2018-12-17 17:18:20,891 - test tvchannel_page - INFO - Start test hotclick_page
+2018-12-17 17:18:44,716 - test tvchannel_page - INFO - load hotnec page is ok
+2018-12-17 17:18:47,073 - test tvchannel_page - INFO - Start test lastfresh_page
+2018-12-17 17:19:10,829 - test tvchannel_page - INFO - test lastfresh_page is end
+2018-12-17 17:19:13,178 - test tvchannel_page - INFO - Start test lovevideo_page
+2018-12-17 17:19:37,256 - test tvchannel_page - INFO - test lovevideo page is end
+2018-12-17 17:19:39,635 - test tvchannel_page - INFO - Start test recommand_page
+2018-12-17 17:20:03,494 - test tvchannel_page - INFO - tesst recommandnec page is end
+2018-12-17 17:20:05,838 - test tvchannel_page - INFO - Start test sitcome_page
+2018-12-17 17:20:29,568 - test tvchannel_page - INFO - test sitcome page is end
+2018-12-17 17:20:31,930 - test tvchannel_page - INFO - Start test tvchannel
+2018-12-17 17:20:53,005 - test tvchannel_page - INFO - test tvchannel page is end

@@ -1,0 +1,76 @@
+Download:
+       master_page:
+            - name: 主页面定位
+            - type: link_text
+            - value: 下载中心
+       part_page:
+            - name: 分支页面定位
+            - type: link_text
+            - value: 更多>>
+       check_ma:
+            - name: 主页面验证
+            - type: str
+            - value: 下载中心 - Powered by EmpireCMS
+       sye_page:
+            sys_status:
+                    - name: 系统软件页面定位状态码
+                    - type: int
+                    - value: 0
+            check_sys:
+                    - name: 系统页面验证值
+                    - type: assertEqual
+                    - value: 系统软件 - Powered by EmpireCMS
+       nettools_page:
+            net_status:
+                    - name: 网络工具页面定位状态码
+                    - type: int
+                    - value: 1
+            check_net:
+                    - name: 网络工具页面验证值
+                    - type: assertEqual
+                    - value: 网络工具 - Powered by EmpireCMS
+       safetools_page:
+            net_status:
+                    - name: 安全工具页面定位状态码
+                    - type: int
+                    - value: 2
+            check_safe:
+                    - name: 安全工具页面验证值
+                    - type: assertEqual
+                    - value: 安全相关 - Powered by EmpireCMS
+       mediatools_page:
+            media_status:
+                    - name: 媒体工具页面定位状态码
+                    - type: int
+                    - value: 3
+            check_media:
+                    - name: 媒体工具工具页面验证值
+                    - type: assertEqual
+                    - value: 媒体工具 - Powered by EmpireCMS
+       recommand_page:
+                  ele1:
+                          - name: Windows Media Player链接定位元素
+                          - type: link_text
+                          - value: Windows Media Player
+                  check_re:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: Windows Media Player 11 - Powered by EmpireCMS
+       lastfresh_page:
+                  ele1:
+                          - name: MPCGo 2.5链接定位元素
+                          - type: link_text
+                          - value: MPCGo 2.5
+                  check_fresh:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: MPCGo 2.5 - Powered by EmpireCMS
+       hotclick_page:
+                  ele1:
+                          - name: 热点链接定位元素
+                          - type: link_text
+                          - value: UltraEdit-32 14.00a+2 官方简体中文版
+                  check_hot:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: UltraEdit-32 14.00a+2 官方简体中文版 - Powered by EmpireCMS

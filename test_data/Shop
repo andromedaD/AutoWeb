@@ -1,0 +1,86 @@
+Shop:
+      master_page:
+          - name: 主页面定位
+          - type: link_text
+          - value: 网上商城
+
+      part_page:
+          - name: 分支页面定位
+          - type: link_text
+          - value: 更多>>
+
+      check_ma:
+          - name: 主页面验证
+          - type: str
+          - value: 网上商城 - Powered by EmpireCMS
+
+      digit_page:
+          digit_status:
+                  - name: 手机数码页面状态码状态码
+                  - type: int
+                  - value: 0
+          check_digit:
+                  - name: 验证手机数码页面字段
+                  - type: str
+                  - value: 手机数码 - Powered by EmpireCMS
+
+      dianqi_page:
+            dianqi_status:
+                  - name: 电器状态码
+                  - type: int
+                  - value: 1
+            check_dianqi:
+                  - name: 验证电器页面字段
+                  - type: str
+                  - value: 家用电器 - Powered by EmpireCMS
+
+      pc_page:
+            pc_status:
+                  - name: 品牌电脑状态码
+                  - type: int
+                  - value: 2
+            check_pc:
+                  - name: 验证品牌电脑页面字段
+                  - type: str
+                  - value: 品牌电脑 - Powered by EmpireCMS
+
+      book_page:
+            book_status:
+                  - name: 图书杂志状态码
+                  - type: int
+                  - value: 3
+            check_book:
+                  - name: 验证图书杂志页面字段
+                  - type: str
+                  - value: 图书杂志 - Powered by EmpireCMS
+
+
+      recommand_page:
+            ele1:
+                  - name: 惠普笔记本电脑DV2803TX链接定位元素
+                  - type: xpath
+                  - value: /html/body/table[4]/tbody/tr/td[2]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/a/img
+            check_recommand:
+                  - name: 验证惠普笔记本电脑DV2803TX页面字段
+                  - type: str
+                  - value: 惠普笔记本电脑DV2803TX - Powered by EmpireCMS
+
+      lastfresh_page:
+            ele1:
+                  - name: 优化建模与LINDO\LINGO软件链接定位元素
+                  - type: link_text
+                  - value: 优化建模与LINDO\LINGO软件
+            check_lastfresh:
+                  - name: 优化建模与LINDO\LINGO软件页面字段
+                  - type: str
+                  - value: 优化建模与LINDO\LINGO软件 - Powered by EmpireCMS
+
+      hotclick_page:
+            ele1:
+                  - name: 柯达数码相机C713链接定位元素
+                  - type: link_text
+                  - value: 柯达数码相机C713
+            check_hotclick:
+                  - name: 柯达数码相机C713页面字段
+                  - type: str
+                  - value: 柯达数码相机C713 - Powered by EmpireCMS

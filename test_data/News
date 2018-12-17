@@ -1,0 +1,93 @@
+News:
+       master_page:
+            - name: 主页面定位
+            - type: link_text
+            - value: 新闻中心
+
+       part_page:
+            - name: 分支页面定位
+            - type: link_text
+            - value: 更多>>
+
+       check_ma:
+            - name: 主页面验证
+            - type: str
+            - value: 新闻中心 - Powered by EmpireCMS
+
+       homenews_page:
+            homenews_status:
+                    - name: 国内新闻页面定位状态码
+                    - type: int
+                    - value: 0
+            check_homenews:
+                    - name: 国内新闻页面验证值
+                    - type: assertEqual
+                    - value: 国内新闻 - Powered by EmpireCMS
+
+       nationalnews_page:
+            nationalnews_status:
+                    - name: 国际新闻页面定位状态码
+                    - type: int
+                    - value: 1
+            check_nationalnews:
+                    - name: 国际新闻页面验证值
+                    - type: assertEqual
+                    - value: 国际新闻 - Powered by EmpireCMS
+
+       disportnews_page:
+            disportnews_status:
+                    - name: 娱乐新闻页面定位状态码
+                    - type: int
+                    - value: 2
+            check_disportnews:
+                    - name: 娱乐新闻页面验证值
+                    - type: assertEqual
+                    - value: 娱乐新闻 - Powered by EmpireCMS
+
+       sportnews_page:
+            sportnews_status:
+                    - name: 体育新闻页面定位状态码
+                    - type: int
+                    - value: 3
+            check_sportnews:
+                    - name: 娱乐新闻页面验证值
+                    - type: assertEqual
+                    - value: 体育新闻 - Powered by EmpireCMS
+
+       recommandnews_page:
+                  ele1:
+                          - name: 推荐资讯链接定位元素
+                          - type: link_text
+                          - value: 中国男乒第16次捧起斯
+                  check_re:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS
+
+       lastfresh_page:
+                  ele1:
+                          - name: 中国男乒第16次捧起斯韦思林杯链接定位元素有2个，取第一个
+                          - type: link_text
+                          - value: 中国男乒第16次捧起斯韦思林杯
+                  status:
+                          - name: 状态码
+                          - type: int
+                          - value: 0
+                  check_fresh:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS
+
+       hotclick_page:
+                  ele1:
+                          - name: 中国男乒第16次捧起斯韦思林杯链接定位元素有2个，取第二个
+                          - type: link_text
+                          - value: 中国男乒第16次捧起斯韦思林杯
+                  status:
+                          - name: 状态码
+                          - type: int
+                          - value: 1
+                  check_hot:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 中国男乒第16次捧起斯韦思林杯 - Powered by EmpireCMS

@@ -1,0 +1,71 @@
+Picturech:
+       master_page:
+            - name: 主页面定位
+            - type: link_text
+            - value: 图片频道
+
+       part_page:
+            - name: 分支页面定位
+            - type: link_text
+            - value: 更多>>
+
+       check_ma:
+            - name: 主页面验证
+            - type: str
+            - value: 图片频道 - Powered by EmpireCMS
+
+       star_page:
+            star_status:
+                    - name: 明星风采页面定位状态码
+                    - type: int
+                    - value: 0
+            check_star:
+                    - name: 明星风采页面验证值
+                    - type: assertEqual
+                    - value: 明星风采 - Powered by EmpireCMS
+
+       nature_page:
+            nature_status:
+                    - name: 自然风光页面定位状态码
+                    - type: int
+                    - value: 1
+            check_nature:
+                    - name: 自然风光页面验证值
+                    - type: assertEqual
+                    - value: 自然风景 - Powered by EmpireCMS
+       animotion_page:
+            animotion_status:
+                    - name: 动画图片页面定位状态码
+                    - type: int
+                    - value: 2
+            check_animotion:
+                    - name: 动画图片页面验证值
+                    - type: assertEqual
+                    - value: 动漫图片 - Powered by EmpireCMS
+       recommand_page:
+                  ele1:
+                          - name: 推荐资讯链接定位元素
+                          - type: css
+                          - value: img[alt="宋慧乔[图集]"]
+                  check_re:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 宋慧乔[图集] - Powered by EmpireCMS
+       lastfresh_page:
+                  ele1:
+                          - name: 高山流水链接定位元素
+                          - type: css
+                          - value: table.box>tbody>tr>td>ul>li>a[title="宋慧乔[图集]"]
+                  check_fresh:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 宋慧乔[图集] - Powered by EmpireCMS
+       hotclick_page:
+                  ele1:
+                          - name: 热点链接定位元素
+                          - type: css
+                          - value: table.box>tbody>tr>td>ol.rank>li.no2>a
+                  check_hot:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 宋慧乔[图集] - Powered by EmpireCMS

@@ -1,0 +1,16 @@
+2018-12-17 11:21:59,141 - test download_page - ERROR - test_download_center -193 - 'NoneType' object has no attribute 'click'
+2018-12-17 11:23:21,363 - test download_page - ERROR - test_download_center -168 - 'NoneType' object has no attribute 'click'
+2018-12-17 11:24:14,308 - test download_page - ERROR - test_download_center -67 - 'sys_page'
+2018-12-17 11:30:30,290 - test download_page - ERROR - test_download_center -193 - 'NoneType' object has no attribute 'click'
+2018-12-17 11:30:57,242 - test download_page - ERROR - test_download_center -67 - 'sys_page'
+2018-12-17 11:33:01,300 - test download_page - ERROR - test_download_center -67 - 'sys_page'
+2018-12-17 11:35:29,926 - test download_page - ERROR - test_download_center -67 - 'sys_page'
+2018-12-17 14:14:09,199 - test news_page - ERROR - test_news -116 - 'check_disportnews'
+2018-12-17 14:15:02,217 - test news_page - ERROR - test_news -221 - find_elements_by_link_text() takes 2 positional arguments but 3 were given
+2018-12-17 14:15:28,751 - test news_page - ERROR - test_news -195 - find_elements_by_link_text() takes 2 positional arguments but 3 were given
+2018-12-17 14:16:45,396 - test news_page - ERROR - test_news -169 - find_element_by_link_text() takes 2 positional arguments but 3 were given
+2018-12-17 14:25:18,412 - test news_page - ERROR - test_news -116 - 'check_disportnews'
+2018-12-17 16:24:08,262 - test shop_page - ERROR - test_shop -140 - list index out of range
+2018-12-17 16:24:38,735 - test shop_page - ERROR - test_shop -90 - [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+2018-12-17 16:27:33,734 - test shop_page - ERROR - test_shop -140 - 'check_pc'
+2018-12-17 17:12:22,565 - test tvchannel_page - ERROR - test_tvchannel -92 - '爱情片 - Powered by EmpireCMS' != 1

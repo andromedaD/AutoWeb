@@ -1,0 +1,58 @@
+Flashchannel:
+       master_page:
+            - name: 主页面定位
+            - type: link_text
+            - value: FLASH频道
+       part_page:
+            - name: 分支页面定位
+            - type: link_text
+            - value: 更多>>
+       check_ma:
+            - name: 主页面验证
+            - type: str
+            - value: FLASH频道 - Powered by EmpireCMS
+       game_page:
+            game_status:
+                    - name: 游戏页面定位状态码
+                    - type: int
+                    - value: 0
+            check_game:
+                    - name: 游戏页面验证值
+                    - type: assertEqual
+                    - value: 游戏 - Powered by EmpireCMS
+       music_page:
+            music_status:
+                    - name: 音乐页面定位状态码
+                    - type: int
+                    - value: 1
+            check_music:
+                    - name: 音乐页面验证值
+                    - type: assertEqual
+                    - value: 音乐MV - Powered by EmpireCMS
+       recommand_page:
+                  ele1:
+                          - name: 推荐资讯链接定位元素
+                          - type: link_text
+                          - value: 葬花吟 古筝Flash音乐
+                  check_re:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 葬花吟 古筝Flash音乐 - Powered by EmpireCMS
+       lastfresh_page:
+                  ele1:
+                          - name: 高山流水链接定位元素
+                          - type: link_text
+                          - value: 高山流水
+                  check_fresh:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 高山流水 - Powered by EmpireCMS
+       hotclick_page:
+                  ele1:
+                          - name: 热点链接定位元素
+                          - type: link_text
+                          - value: 考验记忆力
+                  check_hot:
+                          - name: 页面跳转后title断言
+                          - type: assertEqual
+                          - value: 考验记忆力 - Powered by EmpireCMS
