@@ -1,9 +1,10 @@
 # -*- coding:UTF-8 -*-
-from testdata import *
-from driver import *
-from PageAction import *
-from log_print import *
-from myunit import *
+from action.PageAction import *
+from action.driver import *
+from util.log_print import *
+from util.myunit import *
+from test_data.testdata import *
+
 
 class Login(Page):
     '''登录操作方法'''

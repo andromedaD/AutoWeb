@@ -1,0 +1,169 @@
+Register:
+       member_center:
+                    - name: 注册按钮定位
+                    - type: name
+                    - value: Submit2
+       check_member:
+                    - name: 注册页断言
+                    - type: str
+                    - value: 注册会员
+       regular_member:
+            next_step:
+                    - name: 下一步按钮定位页面定位
+                    - type: name
+                    - value: button
+            username_loc:
+                    - name: 用户名输入框元素定位
+                    - type: name
+                    - value: username
+            password_loc:
+                    - name: 密码输入框元素定位
+                    - type: name
+                    - value: password
+            repassword_loc:
+                    - name: 重复密码输入框元素定位
+                    - type: name
+                    - value: repassword
+            email_loc:
+                    - name: email输入框元素定位
+                    - type: name
+                    - value: email
+            truename_loc:
+                    - name: 真实姓名
+                    - type: name
+                    - value: truename
+            qq_loc:
+                    - name: qq账号
+                    - type: name
+                    - value: oicq
+            msn_loc:
+                    - name: msn账号
+                    - type: name
+                    - value: msn
+            tel_loc:
+                    - name: 电话号码
+                    - type: name
+                    - value: mycall
+            ip_loc:
+                    - name: 网站地址
+                    - type: name
+                    - value: homepage
+            head_portrait:
+                    - name: 头像元素定位
+                    - type: css
+                    - value: input[name="userpicfile"]
+            head_img:
+                    - name: 头像路径
+                    - type: path
+                    - value: D:\AutoWeb\test_data\test.jpg
+            address:
+                    - name: 联系地址元素定位
+                    - type: name
+                    - value: address
+            zip_code:
+                    - name: 邮编元素定位
+                    - type: name
+                    - value: zip
+            personal:
+                    - name: 个人介绍元素定位
+                    - type: name
+                    - value: saytext
+            register:
+                    - name: 马上注册按钮元素定位
+                    - type: name
+                    - value: Submit
+            back:
+                    - name: 返回按钮元素定位
+                    - type: name
+                    - value: Submit
+            check_regular:
+                    - name: title
+                    - type: str
+                    - value: 会员中心
+       corporate_member:
+            ele1:
+                    - name: 勾选企业会员
+                    - type: css
+                    - value: input[type="radio"][value="3"]
+            next_step:
+                    - name: 下一步按钮定位页面定位
+                    - type: name
+                    - value: button
+            username_loc:
+                    - name: 用户名输入框元素定位
+                    - type: name
+                    - value: username
+            password_loc:
+                    - name: 密码输入框元素定位
+                    - type: name
+                    - value: password
+            repassword_loc:
+                    - name: 重复密码输入框元素定位
+                    - type: name
+                    - value: repassword
+            email_loc:
+                    - name: email输入框元素定位
+                    - type: name
+                    - value: email
+            company_loc:
+                    - name: 公司名称输入框元素定位
+                    - type: name
+                    - value: company
+
+            truename_loc:
+                    - name: 联系人输入框元素定位
+                    - type: name
+                    - value: truename
+            telname_loc:
+                    - name: 联系电话输入框元素定位
+                    - type: name
+                    - value: mycall
+            tel_loc:
+                    - name: 手机定位输入框
+                    - type: name
+                    - value: phone
+            fax_loc:
+                    - name: 传真输入框元素定位
+                    - type: name
+                    - value: fax
+            qq_loc:
+                    - name: qq账号
+                    - type: name
+                    - value: oicq
+            msn_loc:
+                    - name: msn账号
+                    - type: name
+                    - value: msn
+            ip_loc:
+                    - name: 网站地址
+                    - type: name
+                    - value: homepage
+            head_portrait:
+                    - name: 头像元素定位
+                    - type: name
+                    - value: userpicfile
+            head_img:
+                    - name: 头像路径
+                    - type: path
+                    - value: D:\AutoWeb\test_data\test.jpg
+
+            address:
+                    - name: 联系地址元素定位
+                    - type: name
+                    - value: address
+            zip_code:
+                    - name: 邮编元素定位
+                    - type: name
+                    - value: zip
+            personal:
+                    - name: 个人介绍元素定位
+                    - type: name
+                    - value: saytext
+            register:
+                    - name: 马上注册按钮元素定位
+                    - type: name
+                    - value: Submit
+            back:
+                    - name: 返回按钮元素定位
+                    - type: name
+                    - value: Submit2

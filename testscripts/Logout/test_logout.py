@@ -2,11 +2,11 @@
 
 import unittest
 
-from Login.test_login import Login
-from driver import *
-from log_print import *
-from myunit import StartEnd
-from testdata import testDataInfo
+from testscripts.Login.test_login import Login
+from action.driver import *
+from util.log_print import *
+from util.myunit import StartEnd
+from test_data.testdata import testDataInfo
 
 
 class Logout(Login):

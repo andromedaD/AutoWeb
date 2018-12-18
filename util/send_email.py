@@ -6,7 +6,7 @@ import unittest
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from BSTestRunner import BSTestRunner
-from config import *
+from conf.config import *
 
 def send_mail(latest_report):#发送带附件测试邮件
     f=open(latest_report,'rb')

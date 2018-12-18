@@ -1,10 +1,13 @@
 # -*- coding:UTF-8 -*-
 import unittest
-from driver import *
+
+from action.PageAction import *
+
+from action.driver import *
+from util.log_print import *
+from test_data.testdata import testDataInfo
 from util.myunit import StartEnd
-from PageAction import *
-from log_print import *
-from testdata import testDataInfo
+
 
 class BasePage(Page):
     '''初始页面需要的方法'''

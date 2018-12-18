@@ -5,16 +5,21 @@ EMAIL:
     password: 306359211xxx
     sender: k568898699@163.com
     recives:
-       - 568898699@qq.com
-       - 306359211@qq.com
-       - k568898699@126.com
+           - 568898699@qq.com
+           - 306359211@qq.com
+           - k568898699@126.com
     subject: Web selenium 自动化测试报告
     emialpart_path: D:\python_script\image\test.jpg
 
-report_dir: D:\AutoWeb\test_report\
-case_dir: D:\AutoWeb\testscripts\
-all_logs_dir:  D:\AutoWeb\test_report\Logs\All_logs\
-error_logs_dir: D:\AutoWeb\test_report\Logs\Error_logs
-test_data_dir: D:\AutoWeb\test_data
-image_dir: D:\AutoWeb\test_report\image
+#初始url路径
 base_url: http://localhost
+#测试报告路径
+report_dir: D:\AutoWeb\test_report\
+#用例路径
+case_dir: D:\AutoWeb\testscripts\
+#所有日志路径
+all_logs_dir:  D:\AutoWeb\test_report\Logs\All_logs\
+#错误日志路径
+error_logs_dir: D:\AutoWeb\test_report\Logs\Error_logs
+#截图路径
+image_dir: D:\AutoWeb\test_report\image

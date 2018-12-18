@@ -14,26 +14,26 @@ def testDataInfo(path):
 def testdataWrite(path,testdata):
     curpath = os.path.dirname(os.path.realpath(__file__))
     newpath = os.path.join(curpath, path)
-    with open(newpath,'w',encoding="utf-8") as fb:
+    with open(newpath,'a',encoding="utf-8") as fb:
         yaml.dump(testdata,fb)
 
 
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
 #     #测试室读取
 #     datas=testDataInfo('testdata')
 #     for key,value in datas.items():
 #         print(key,':',value)
 #
 #     #测试写入
-#     testdata={
-#         'platformName': 'Android',
-#         'platformVersion': '7.0',
-#         'deviceName': 'A5RNW18316011440',
-#         'appPackage': 'com.tencent.mm',
-#         'appActivity': '.ui.LauncherUI',
-#         'automationName': 'Uiautomator2',
-#         'unicodeKeyboard': [True, "hh"],
-#         'resetKeyboard': True,
-#     }
-#     testdataWrite('Login',testdata)
+    testdata={
+        'platformName': 'Android',
+        'platformVersion': '7.0',
+        'deviceName': 'A5RNW18316011440',
+        'appPackage': 'com.tencent.mm',
+        'appActivity': '.ui.LauncherUI',
+        'automationName': 'Uiautomator2',
+        'unicodeKeyboard': [True, "hh"],
+        'resetKeyboard': True,
+    }
+    testdataWrite('Login',testdata)
