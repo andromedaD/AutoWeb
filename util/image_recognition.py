@@ -22,10 +22,10 @@ def recognition_captcha(data):
     with open(filename, 'wb') as fb:
         fb.write(data)
 
-    appid = 'appid'  # 接入优图服务，注册账号获取
-    secret_id = 'secret_id'
-    secret_key = 'secret_key'
-    userid = 'userid'
+    appid = '10161374'  # 接入优图服务，注册账号获取
+    secret_id = 'AKIDA9vb5JP3ZoulV1wRP8btvnPkqgGaHgSz'
+    secret_key = 'UjjUzIMGuISM0PddU5QWMxIQJ2VjhQt7'
+    userid = '10161374'
     end_point = TencentYoutuyun.conf.API_YOUTU_END_POINT
 
     youtu = TencentYoutuyun.YouTu(appid, secret_id, secret_key, userid, end_point)  # 初始化

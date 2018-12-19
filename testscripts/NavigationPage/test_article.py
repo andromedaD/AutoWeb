@@ -7,7 +7,6 @@ from util.log_print import *
 from util.myunit import StartEnd
 from test_data.testdata import testDataInfo
 
-
 class ArticlePage(Login):
     url='/'
     def load_master_page(self,type,el_loc):
@@ -120,5 +119,5 @@ class TestArticlePage(StartEnd):
             newspage.quit_browser_()
 
 if __name__ == '__main__':
-    unittest.main()
 
+    unittest.main()

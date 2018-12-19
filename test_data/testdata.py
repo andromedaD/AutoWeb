@@ -1,11 +1,12 @@
 # -*- coding:UTF-8 -*-
 import yaml
 import os
+
 def testDataInfo(path):
     '''测试数据'''
     curpath=os.path.dirname(os.path.realpath(__file__))
     newpath=os.path.join(curpath,path)
-    with open(newpath,'rb') as fb:
+    with open(newpath,'rb',buffering=1024) as fb:
         fb_stream=fb.read()
         testdata_info=yaml.load(fb_stream)
         fb.close()
