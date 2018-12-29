@@ -1,0 +1,276 @@
+2018-12-19 08:25:57,485 - test Articl_page - INFO - Start test article_page 
+2018-12-19 08:26:05,313 - test Articl_page - INFO - Start test article_page 
+2018-12-19 08:26:42,616 - test Articl_page - INFO - test article page is end
+2018-12-19 08:26:44,937 - test Articl_page - INFO - Start test novel 
+2018-12-19 08:27:48,813 - test Articl_page - INFO - test novel page is end
+2018-12-19 08:27:51,199 - test Articl_page - INFO - Start test porse_page
+2018-12-19 08:28:37,806 - test Articl_page - INFO - test porse page is end
+2018-12-19 08:28:40,125 - test Articl_page - INFO - Start test portry
+2018-12-19 08:46:48,568 - test Articl_page - INFO - Start test portry
+2018-12-19 09:24:38,413 - test Articl_page - INFO - Start test article_page 
+2018-12-19 09:25:19,760 - test Articl_page - INFO - test article page is end
+2018-12-19 09:25:22,107 - test Articl_page - INFO - Start test novel 
+2018-12-19 09:26:25,584 - test Articl_page - INFO - test novel page is end
+2018-12-19 09:26:27,923 - test Articl_page - INFO - Start test porse_page
+2018-12-19 09:27:09,744 - test Articl_page - INFO - test porse page is end
+2018-12-19 09:27:12,101 - test Articl_page - INFO - Start test portry
+2018-12-19 09:27:54,674 - test Articl_page - INFO - test poetry page is end
+2018-12-19 14:30:52,772 - test_login - INFO - Start login
+2018-12-19 14:32:03,673 - test logout - INFO - Start test logout
+2018-12-19 14:33:46,191 - test_login - INFO - Start login
+2018-12-19 14:34:29,443 - test_login - INFO - Start login
+2018-12-19 14:34:41,868 - test_login - INFO - login is end
+2018-12-19 14:35:14,056 - test_login - INFO - Start login
+2018-12-19 14:38:13,479 - test BasePage - INFO - Start test_open_browser_
+2018-12-19 14:38:18,246 - test BasePage - INFO - open browser is end
+2018-12-19 14:38:22,427 - test_login - INFO - Start login
+2018-12-19 14:38:22,427 - test_login - INFO - Start login
+2018-12-19 14:38:34,693 - test_login - INFO - login is end
+2018-12-19 14:38:34,693 - test_login - INFO - login is end
+2018-12-19 14:38:36,713 - test logout - INFO - Start test logout
+2018-12-19 14:38:53,376 - test logout - ERROR - Expecting value: line 1 column 1 (char 0)
+2018-12-19 14:38:55,405 - test logout - INFO - test logout is end
+2018-12-19 14:38:58,410 - test Articl_page - INFO - Start test article_page 
+2018-12-19 14:39:57,350 - test Articl_page - INFO - test article page is end
+2018-12-19 14:39:59,386 - test Articl_page - INFO - Start test novel 
+2018-12-19 14:41:42,689 - test Articl_page - INFO - test novel page is end
+2018-12-19 14:41:44,732 - test Articl_page - INFO - Start test porse_page
+2018-12-19 14:42:45,930 - test Articl_page - INFO - test porse page is end
+2018-12-19 14:42:47,981 - test Articl_page - INFO - Start test portry
+2018-12-19 14:43:50,343 - test Articl_page - INFO - test poetry page is end
+2018-12-19 14:43:52,368 - test categroy_msg_page - INFO - Start test addinfo
+2018-12-19 14:44:23,553 - test categroy_msg_page - INFO - test addinfo is end
+2018-12-19 14:44:25,575 - test categroy_msg_page - INFO - Start test areamap
+2018-12-19 14:44:44,301 - test categroy_msg_page - INFO - test areamap  is end 
+2018-12-19 14:44:46,324 - test categroy_msg_page - INFO - Start test categroymsg_page
+2018-12-19 14:45:02,799 - test categroy_msg_page - INFO - test category msg page is end
+2018-12-19 14:45:04,823 - test categroy_msg_page - INFO - Start test citylife
+2018-12-19 14:45:23,533 - test categroy_msg_page - INFO - test citylife is end
+2018-12-19 14:45:44,334 - test categroy_msg_page - INFO - test citylife page is end
+2018-12-19 14:46:05,211 - test categroy_msg_page - INFO - test fleamall page is end
+2018-12-19 14:46:07,247 - test categroy_msg_page - INFO - Start test hotclick
+2018-12-19 14:46:25,923 - test categroy_msg_page - INFO - test hotclick is end
+2018-12-19 14:46:46,670 - test categroy_msg_page - INFO - test house is end
+2018-12-19 14:47:07,506 - test categroy_msg_page - INFO - test house page is end
+2018-12-19 14:47:09,538 - test categroy_msg_page - INFO - Start test job
+2018-12-19 14:47:36,332 - test categroy_msg_page - INFO - test job is end
+2018-12-19 14:47:57,112 - test categroy_msg_page - INFO - test job page is end
+2018-12-19 14:47:59,146 - test categroy_msg_page - INFO - Start test pc
+2018-12-19 14:48:18,005 - test categroy_msg_page - INFO - test pc is end
+2018-12-19 14:48:39,974 - test categroy_msg_page - INFO - test search is end 
+2018-12-19 14:48:42,001 - test download_page - INFO - Start test downloadpage
+2018-12-19 14:48:58,498 - test download_page - INFO - test download page is end
+2018-12-19 14:49:00,533 - test download_page - INFO - Start test hotclick_page
+2018-12-19 14:49:19,159 - test download_page - INFO - test hotclick page is end
+2018-12-19 14:49:21,197 - test download_page - INFO - Start test lastfresh_page
+2018-12-19 14:49:39,901 - test download_page - INFO - test lastfresh page is end
+2018-12-19 14:49:41,944 - test download_page - INFO - Start test mediatools_page
+2018-12-19 14:50:00,769 - test download_page - INFO - test sport mediatools page is end
+2018-12-19 14:50:02,798 - test download_page - INFO - Start test nettols
+2018-12-19 14:50:21,569 - test download_page - INFO - test nettools page is end
+2018-12-19 14:50:23,612 - test download_page - INFO - Start test recommand_page
+2018-12-19 14:50:42,671 - test download_page - INFO - test recommandnewb page is end
+2018-12-19 14:50:44,714 - test download_page - INFO - Start test safetools_page
+2018-12-19 14:51:03,611 - test download_page - INFO - test safetools news page is end
+2018-12-19 14:51:05,650 - test download_page - INFO - Start test sys_page
+2018-12-19 14:51:24,398 - test download_page - INFO - test sys news page is end
+2018-12-19 14:51:42,988 - test Flashchannel_page - INFO - test flash page is end
+2018-12-19 14:51:45,038 - test Flashchannel_page - INFO - Start test game_page
+2018-12-19 14:52:06,080 - test Flashchannel_page - INFO - test game page is end
+2018-12-19 14:52:08,115 - test Flashchannel_page - INFO - Start test hotclick
+2018-12-19 14:52:37,480 - test Flashchannel_page - INFO - test hotnee page is end
+2018-12-19 14:52:58,189 - test Flashchannel_page - INFO - test lastfresh_page is end
+2018-12-19 14:53:00,225 - test Flashchannel_page - INFO - Start test music_page
+2018-12-19 14:53:21,221 - test Flashchannel_page - INFO - test music page is end
+2018-12-19 14:53:23,263 - test Flashchannel_page - INFO - Start test recommand_page
+2018-12-19 14:53:42,041 - test Flashchannel_page - INFO - test recommandnee page is end
+2018-12-19 14:53:44,073 - test news_page - INFO - Start test disportnews_page
+2018-12-19 14:54:02,857 - test news_page - INFO - test disport news page is end
+2018-12-19 14:54:05,292 - test news_page - INFO - Start test homenews_page
+2018-12-19 14:54:24,154 - test news_page - INFO - test home news page is end
+2018-12-19 14:54:26,199 - test news_page - INFO - Start test hotclick_page
+2018-12-19 14:54:45,360 - test news_page - INFO - test hotclick_page is end
+2018-12-19 14:54:47,403 - test news_page - INFO - Start test lastfresh_page
+2018-12-19 14:55:06,720 - test news_page - INFO - test lastfresh_page is ok
+2018-12-19 14:55:08,763 - test news_page - INFO - Start test nationalnews_page
+2018-12-19 14:55:28,061 - test news_page - INFO - test nation news page is end
+2018-12-19 14:55:30,101 - test news_page - INFO - Start test news_page
+2018-12-19 14:55:46,674 - test news_page - INFO - test news page is end
+2018-12-19 14:55:48,718 - test news_page - INFO - Start test recommandnews_page
+2018-12-19 14:56:08,021 - test news_page - INFO - test recommandnews page is end
+2018-12-19 14:56:10,049 - test news_page - INFO - Start test sportnews_page
+2018-12-19 14:56:28,995 - test news_page - INFO - test sport news page is end
+2018-12-19 14:56:31,039 - test Picturechannel_page - INFO - Start test animotion_page
+2018-12-19 14:56:49,830 - test Picturechannel_page - INFO - test animotion page is end
+2018-12-19 14:56:51,882 - test Picturechannel_page - INFO - Start test hotclick_page
+2018-12-19 14:57:10,591 - test Picturechannel_page - INFO - test hotclick page is end
+2018-12-19 14:57:12,637 - test Picturechannel_page - INFO - Start test lastfresh_page
+2018-12-19 14:57:31,431 - test Picturechannel_page - INFO - test lastfresh_page is end
+2018-12-19 14:57:52,293 - test Picturechannel_page - INFO - test nature page is end
+2018-12-19 14:57:54,333 - test Picturechannel_page - INFO - Start test picturech_page
+2018-12-19 14:58:10,879 - test Picturechannel_page - INFO - test picturech page is end
+2018-12-19 14:58:12,917 - test Picturechannel_page - INFO - Start test recommand_page
+2018-12-19 14:58:32,088 - test Picturechannel_page - INFO - test recommandnef page is end
+2018-12-19 14:58:34,119 - test Picturechannel_page - INFO - Start test star_page 
+2018-12-19 14:58:52,878 - test Picturechannel_page - INFO - test star page is end
+2018-12-19 14:58:54,909 - test shop_page - INFO - Start test book_page
+2018-12-19 15:01:20,129 - test shop_page - INFO - test book page is end
+2018-12-19 15:01:22,167 - test shop_page - INFO - Start test dianqi_page
+2018-12-19 15:01:43,001 - test shop_page - INFO - test dianqi page is end
+2018-12-19 15:01:45,036 - test shop_page - INFO - Start test digit_page
+2018-12-19 15:02:07,295 - test shop_page - INFO - test digit page is end
+2018-12-19 15:02:09,319 - test shop_page - INFO - Start test hotclick_page
+2018-12-19 15:02:38,268 - test shop_page - INFO - test hotned page is end
+2018-12-19 15:02:40,313 - test shop_page - INFO - Start test lastfresh_page
+2018-12-19 15:05:00,070 - test shop_page - INFO - test lastned page is end
+2018-12-19 15:05:02,101 - test shop_page - INFO - Start test pc_page
+2018-12-19 15:06:03,801 - test shop_page - INFO - test pc page is end
+2018-12-19 15:06:05,836 - test shop_page - INFO - Start test recommand_page
+2018-12-19 15:06:26,235 - test shop_page - INFO - test recommandned page is end
+2018-12-19 15:06:28,268 - test shop_page - INFO - Start test shop_page
+2018-12-19 15:06:46,339 - test shop_page - INFO - test shop page is end
+2018-12-19 15:06:48,381 - test tvchannel_page - INFO - Start test actionvideo_page
+2018-12-19 15:07:09,982 - test tvchannel_page - INFO - test action video page is end
+2018-12-19 15:07:12,006 - test tvchannel_page - INFO - Start test comedy_page
+2018-12-19 15:07:30,709 - test tvchannel_page - INFO - test comedy page is end
+2018-12-19 15:07:32,749 - test tvchannel_page - INFO - Start test hotclick_page
+2018-12-19 15:07:51,567 - test tvchannel_page - INFO - load hotnec page is ok
+2018-12-19 15:07:53,601 - test tvchannel_page - INFO - Start test lastfresh_page
+2018-12-19 15:08:12,374 - test tvchannel_page - INFO - test lastfresh_page is end
+2018-12-19 15:08:14,419 - test tvchannel_page - INFO - Start test lovevideo_page
+2018-12-19 15:08:33,306 - test tvchannel_page - INFO - test lovevideo page is end
+2018-12-19 15:08:35,348 - test tvchannel_page - INFO - Start test recommand_page
+2018-12-19 15:08:54,209 - test tvchannel_page - INFO - tesst recommandnec page is end
+2018-12-19 15:08:56,245 - test tvchannel_page - INFO - Start test sitcome_page
+2018-12-19 16:24:46,414 - test BasePage - INFO - Start test_open_browser_
+2018-12-19 16:24:49,300 - test BasePage - INFO - open browser is end
+2018-12-19 16:24:53,495 - test_login - INFO - Start login
+2018-12-19 16:24:53,495 - test_login - INFO - Start login
+2018-12-19 16:25:05,770 - test_login - INFO - login is end
+2018-12-19 16:25:05,770 - test_login - INFO - login is end
+2018-12-19 16:25:07,795 - test logout - INFO - Start test logout
+2018-12-19 16:25:24,510 - test logout - ERROR - Expecting value: line 1 column 1 (char 0)
+2018-12-19 16:25:26,548 - test logout - INFO - test logout is end
+2018-12-19 16:25:29,564 - test Articl_page - INFO - Start test article_page 
+2018-12-19 16:26:28,528 - test Articl_page - INFO - test article page is end
+2018-12-19 16:26:30,572 - test Articl_page - INFO - Start test novel 
+2018-12-19 16:28:13,658 - test Articl_page - INFO - test novel page is end
+2018-12-19 16:28:15,685 - test Articl_page - INFO - Start test porse_page
+2018-12-19 16:29:16,716 - test Articl_page - INFO - test porse page is end
+2018-12-19 16:29:18,742 - test Articl_page - INFO - Start test portry
+2018-12-19 16:30:19,822 - test Articl_page - INFO - test poetry page is end
+2018-12-19 16:30:21,859 - test categroy_msg_page - INFO - Start test addinfo
+2018-12-19 16:30:53,237 - test categroy_msg_page - INFO - test addinfo is end
+2018-12-19 16:30:55,261 - test categroy_msg_page - INFO - Start test areamap
+2018-12-19 16:31:14,146 - test categroy_msg_page - INFO - test areamap  is end 
+2018-12-19 16:31:16,180 - test categroy_msg_page - INFO - Start test categroymsg_page
+2018-12-19 16:31:32,771 - test categroy_msg_page - INFO - test category msg page is end
+2018-12-19 16:31:34,809 - test categroy_msg_page - INFO - Start test citylife
+2018-12-19 16:31:53,651 - test categroy_msg_page - INFO - test citylife is end
+2018-12-19 16:32:14,551 - test categroy_msg_page - INFO - test citylife page is end
+2018-12-19 16:32:35,374 - test categroy_msg_page - INFO - test fleamall page is end
+2018-12-19 16:32:37,409 - test categroy_msg_page - INFO - Start test hotclick
+2018-12-19 16:32:56,193 - test categroy_msg_page - INFO - test hotclick is end
+2018-12-19 16:33:16,941 - test categroy_msg_page - INFO - test house is end
+2018-12-19 16:33:37,776 - test categroy_msg_page - INFO - test house page is end
+2018-12-19 16:33:39,811 - test categroy_msg_page - INFO - Start test job
+2018-12-19 16:33:58,580 - test categroy_msg_page - INFO - test job is end
+2018-12-19 16:34:19,392 - test categroy_msg_page - INFO - test job page is end
+2018-12-19 16:34:21,434 - test categroy_msg_page - INFO - Start test pc
+2018-12-19 16:34:40,215 - test categroy_msg_page - INFO - test pc is end
+2018-12-19 16:35:02,157 - test categroy_msg_page - INFO - test search is end 
+2018-12-19 16:35:04,197 - test download_page - INFO - Start test downloadpage
+2018-12-19 16:35:20,803 - test download_page - INFO - test download page is end
+2018-12-19 16:35:22,834 - test download_page - INFO - Start test hotclick_page
+2018-12-19 16:35:41,576 - test download_page - INFO - test hotclick page is end
+2018-12-19 16:35:43,615 - test download_page - INFO - Start test lastfresh_page
+2018-12-19 16:36:02,453 - test download_page - INFO - test lastfresh page is end
+2018-12-19 16:36:04,495 - test download_page - INFO - Start test mediatools_page
+2018-12-19 16:36:23,362 - test download_page - INFO - test sport mediatools page is end
+2018-12-19 16:36:25,402 - test download_page - INFO - Start test nettols
+2018-12-19 16:36:44,262 - test download_page - INFO - test nettools page is end
+2018-12-19 16:36:46,291 - test download_page - INFO - Start test recommand_page
+2018-12-19 16:37:05,362 - test download_page - INFO - test recommandnewb page is end
+2018-12-19 16:37:07,391 - test download_page - INFO - Start test safetools_page
+2018-12-19 16:37:26,182 - test download_page - INFO - test safetools news page is end
+2018-12-19 16:37:28,224 - test download_page - INFO - Start test sys_page
+2018-12-19 16:37:46,962 - test download_page - INFO - test sys news page is end
+2018-12-19 16:38:05,608 - test Flashchannel_page - INFO - test flash page is end
+2018-12-19 16:38:07,639 - test Flashchannel_page - INFO - Start test game_page
+2018-12-19 16:38:28,602 - test Flashchannel_page - INFO - test game page is end
+2018-12-19 16:38:30,634 - test Flashchannel_page - INFO - Start test hotclick
+2018-12-19 16:38:51,541 - test Flashchannel_page - INFO - test hotnee page is end
+2018-12-19 16:39:12,312 - test Flashchannel_page - INFO - test lastfresh_page is end
+2018-12-19 16:39:14,355 - test Flashchannel_page - INFO - Start test music_page
+2018-12-19 16:39:35,249 - test Flashchannel_page - INFO - test music page is end
+2018-12-19 16:39:37,282 - test Flashchannel_page - INFO - Start test recommand_page
+2018-12-19 16:39:56,037 - test Flashchannel_page - INFO - test recommandnee page is end
+2018-12-19 16:39:58,064 - test news_page - INFO - Start test disportnews_page
+2018-12-19 16:40:16,852 - test news_page - INFO - test disport news page is end
+2018-12-19 16:40:18,886 - test news_page - INFO - Start test homenews_page
+2018-12-19 16:40:37,760 - test news_page - INFO - test home news page is end
+2018-12-19 16:40:39,807 - test news_page - INFO - Start test hotclick_page
+2018-12-19 16:40:58,826 - test news_page - INFO - test hotclick_page is end
+2018-12-19 16:41:00,868 - test news_page - INFO - Start test lastfresh_page
+2018-12-19 16:41:19,752 - test news_page - INFO - test lastfresh_page is ok
+2018-12-19 16:41:21,794 - test news_page - INFO - Start test nationalnews_page
+2018-12-19 16:41:40,603 - test news_page - INFO - test nation news page is end
+2018-12-19 16:41:42,636 - test news_page - INFO - Start test news_page
+2018-12-19 16:42:00,018 - test news_page - INFO - test news page is end
+2018-12-19 16:42:02,050 - test news_page - INFO - Start test recommandnews_page
+2018-12-19 16:42:21,574 - test news_page - INFO - test recommandnews page is end
+2018-12-19 16:42:23,604 - test news_page - INFO - Start test sportnews_page
+2018-12-19 16:42:42,469 - test news_page - INFO - test sport news page is end
+2018-12-19 16:42:44,497 - test Picturechannel_page - INFO - Start test animotion_page
+2018-12-19 16:43:03,335 - test Picturechannel_page - INFO - test animotion page is end
+2018-12-19 16:43:05,375 - test Picturechannel_page - INFO - Start test hotclick_page
+2018-12-19 16:43:24,067 - test Picturechannel_page - INFO - test hotclick page is end
+2018-12-19 16:43:26,098 - test Picturechannel_page - INFO - Start test lastfresh_page
+2018-12-19 16:43:44,929 - test Picturechannel_page - INFO - test lastfresh_page is end
+2018-12-19 16:44:05,808 - test Picturechannel_page - INFO - test nature page is end
+2018-12-19 16:44:07,847 - test Picturechannel_page - INFO - Start test picturech_page
+2018-12-19 16:44:24,445 - test Picturechannel_page - INFO - test picturech page is end
+2018-12-19 16:44:26,473 - test Picturechannel_page - INFO - Start test recommand_page
+2018-12-19 16:44:45,453 - test Picturechannel_page - INFO - test recommandnef page is end
+2018-12-19 16:44:47,482 - test Picturechannel_page - INFO - Start test star_page 
+2018-12-19 16:45:06,260 - test Picturechannel_page - INFO - test star page is end
+2018-12-19 16:45:08,288 - test shop_page - INFO - Start test book_page
+2018-12-19 16:47:30,251 - test shop_page - INFO - test book page is end
+2018-12-19 16:47:32,291 - test shop_page - INFO - Start test dianqi_page
+2018-12-19 16:47:52,604 - test shop_page - INFO - test dianqi page is end
+2018-12-19 16:47:54,649 - test shop_page - INFO - Start test digit_page
+2018-12-19 16:48:14,914 - test shop_page - INFO - test digit page is end
+2018-12-19 16:48:16,957 - test shop_page - INFO - Start test hotclick_page
+2018-12-19 16:48:36,504 - test shop_page - INFO - test hotned page is end
+2018-12-19 16:48:38,539 - test shop_page - INFO - Start test lastfresh_page
+2018-12-19 16:50:58,598 - test shop_page - INFO - test lastned page is end
+2018-12-19 16:51:00,625 - test shop_page - INFO - Start test pc_page
+2018-12-19 16:51:20,880 - test shop_page - INFO - test pc page is end
+2018-12-19 16:51:22,923 - test shop_page - INFO - Start test recommand_page
+2018-12-19 16:53:05,893 - test shop_page - INFO - test recommandned page is end
+2018-12-19 16:53:07,917 - test shop_page - INFO - Start test shop_page
+2018-12-19 16:54:06,889 - test shop_page - INFO - test shop page is end
+2018-12-19 16:54:08,934 - test tvchannel_page - INFO - Start test actionvideo_page
+2018-12-19 16:54:28,216 - test tvchannel_page - INFO - test action video page is end
+2018-12-19 16:54:30,253 - test tvchannel_page - INFO - Start test comedy_page
+2018-12-19 16:54:50,016 - test tvchannel_page - INFO - test comedy page is end
+2018-12-19 16:54:52,048 - test tvchannel_page - INFO - Start test hotclick_page
+2018-12-19 16:55:10,937 - test tvchannel_page - INFO - load hotnec page is ok
+2018-12-19 16:55:12,974 - test tvchannel_page - INFO - Start test lastfresh_page
+2018-12-19 16:55:31,781 - test tvchannel_page - INFO - test lastfresh_page is end
+2018-12-19 16:55:33,824 - test tvchannel_page - INFO - Start test lovevideo_page
+2018-12-19 16:55:52,617 - test tvchannel_page - INFO - test lovevideo page is end
+2018-12-19 16:55:54,647 - test tvchannel_page - INFO - Start test recommand_page
+2018-12-19 16:56:13,583 - test tvchannel_page - INFO - tesst recommandnec page is end
+2018-12-19 16:56:15,618 - test tvchannel_page - INFO - Start test sitcome_page
+2018-12-19 16:56:34,535 - test tvchannel_page - INFO - test sitcome page is end
+2018-12-19 16:56:36,572 - test tvchannel_page - INFO - Start test tvchannel
+2018-12-19 16:56:53,141 - test tvchannel_page - INFO - test tvchannel page is end
+2018-12-19 16:56:55,182 - test register - INFO - Start test corporate member register
+2018-12-19 16:57:30,750 - test register - INFO - test regular member register is end
+2018-12-19 16:57:32,780 - test register - INFO - Start test member_center
+2018-12-19 16:57:40,197 - test register - INFO - test member_center is end
+2018-12-19 16:57:42,230 - test register - INFO - Start test regular member register
+2018-12-19 16:58:18,170 - test register - ERROR - Message: 
+
+2018-12-19 16:58:20,198 - test register - INFO - test regular member register is end

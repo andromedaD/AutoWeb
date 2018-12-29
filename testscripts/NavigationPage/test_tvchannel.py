@@ -137,6 +137,7 @@ class TestTvchannelPage(StartEnd):
                 self.data['part_page'][2]['value'],
                 self.data['sitcome_page']['sitcome_status'][2]['value']
             )
+            newspage.wait_title(self.data['sitcome_page']['check_book'][2]['value'])
             title = newspage.check_title()
             self.assertEqual(title,self.data['sitcome_page']['check_book'][2]['value'])
         except Exception as msg:

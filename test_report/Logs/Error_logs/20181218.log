@@ -1,0 +1,36 @@
+2018-12-18 13:12:15,878 - test register - ERROR - test_register -103 - '信息提示' != '注册会员'
+- 信息提示
++ 注册会员
+
+2018-12-18 13:14:29,435 - test register - ERROR - test_register -103 - '帝国网站管理系统 - Powered by EmpireCMS' != '注册会员'
+- 帝国网站管理系统 - Powered by EmpireCMS
++ 注册会员
+
+2018-12-18 13:15:58,207 - test register - ERROR - test_register -103 - '帝国网站管理系统 - Powered by EmpireCMS' != '注册会员'
+- 帝国网站管理系统 - Powered by EmpireCMS
++ 注册会员
+
+2018-12-18 16:42:42,776 - test register - ERROR - test_register -199 - '注册会员' != '帝国网站管理系统 - Powered by EmpireCMS'
+- 注册会员
++ 帝国网站管理系统 - Powered by EmpireCMS
+
+2018-12-18 16:48:23,116 - test register - ERROR - test_register -199 - '注册会员' != '帝国网站管理系统 - Powered by EmpireCMS'
+- 注册会员
++ 帝国网站管理系统 - Powered by EmpireCMS
+
+2018-12-18 16:50:05,539 - test register - ERROR - test_register -199 - '信息提示' != '帝国网站管理系统 - Powered by EmpireCMS'
+- 信息提示
++ 帝国网站管理系统 - Powered by EmpireCMS
+
+2018-12-18 16:57:07,697 - test register - ERROR - test_register -200 - Message: 
+
+2018-12-18 16:58:11,096 - test register - ERROR - test_register -200 - Message: 
+
+2018-12-18 17:00:37,817 - test register - ERROR - test_register -200 - '会员中心' != '帝国网站管理系统 - Powered by EmpireCMS'
+- 会员中心
++ 帝国网站管理系统 - Powered by EmpireCMS
+
+2018-12-18 17:29:49,987 - test register - ERROR - test_register -316 - Message: Unable to locate element: {"method":"name","selector":"company"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmps1pnnqmd/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///C:/Users/ADMINI~1/AppData/Local/Temp/tmps1pnnqmd/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
